@@ -115,6 +115,8 @@ $settings=@{
 . (Join-Path $PSScriptRoot 'Modules\Performance.ps1')
 . (Join-Path $PSScriptRoot 'Modules\Tuning.ps1')
 . (Join-Path $PSScriptRoot 'Modules\Gpu.ps1')
+. (Join-Path $PSScriptRoot 'Modules\DefenderRemoval.ps1')
+. (Join-Path $PSScriptRoot 'Modules\AppRemoval.ps1')
 try {
     $data=$null; $message='Готово'
     switch($r.op){
@@ -168,6 +170,11 @@ try {
         $message='Состояние службы восстановлено.'
       }
       'apps' {$data=@(Apps)}
+      'removalPlan' {$data=Get-AppRemovalPlan ([string]$r.id)}
+      'removalExecute' {$data=Invoke-AppRemoval ([string]$r.planId);$message=$data.Message}
+      'removalCleanup' {$data=Invoke-AppResidualCleanup ([string]$r.planId) @($r.ids);$message=$data.Message}
+      'defenderRemovalPlan' {$data=Get-DefenderRemovalPlan}
+      'defenderRemovalExecute' {$data=Invoke-DefenderRemoval ([string]$r.planId);$message=$data.Message}
       'uninstall' {
         # Resolve again from the OS; never trust a caller-provided uninstall command.
         $app=@(Apps | Where-Object Id -eq $r.id) | Select-Object -First 1

@@ -1,4 +1,4 @@
-using System.IO;
+﻿using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -47,8 +47,8 @@ public partial class MainWindow : Window
     System.Text.Json.JsonElement summary;
     bool AsymmetricX3d => summary.ValueKind == System.Text.Json.JsonValueKind.Object && summary.TryGetProperty("CPU", out var cpu) && IsAsymmetricX3d(cpu.GetString() ?? "");
     static bool IsAsymmetricX3d(string cpu) => System.Text.RegularExpressions.Regex.IsMatch(cpu, @"\bRyzen\s+9\s+(7900|7950|9900|9950)X3D\b", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
-    readonly string[] titles = { "Обзор системы", "Службы Windows", "План питания", "Каталог приложений", "Удаление приложений", "Очистка дисков", "Windows Defender", "Журнал операций", "Настройки", "Центр оптимизации", "Автозагрузка", "Тонкая настройка", "Лаборатория кадров", "Игровые сессии", "Графика и дисплей" };
-    readonly string[] descriptions = { "Всё важное о вашем компьютере — в одном месте.", "Понимайте назначение. Изменяйте осознанно.", "Настройте частоты, охлаждение и поведение устройств.", "Ваши инструменты. Одна очередь установки.", "Классические программы и пакеты Microsoft Store.", "Освободите место, сохранив личные файлы.", "Состояние защиты и интеграция с вашим инструментом.", "Результаты действий, ошибки и резервные копии.", "Внешний вид и данные приложения.", "Меньше фоновой работы. Больше ресурсов для важного.", "Оставьте при запуске только то, что действительно нужно.", "Отзывчивость, ввод и запись игр. Каждое изменение — под контролем.", "Сравните время кадров до и после настройки.", "Временные настройки на время игры. Возврат после выхода.", "Ваша видеокарта, частота экрана и параметры плавности." };
+    readonly string[] titles = { "Обзор системы", "Службы Windows", "План питания", "Каталог приложений", "Удаление приложений", "Очистка дисков", "Windows Defender", "Журнал операций", "Настройки", "Центр оптимизации", "Автозагрузка", "Тонкая настройка", "Лаборатория кадров", "Игровые сессии", "Графика и дисплей", "Центр удаления" };
+    readonly string[] descriptions = { "Всё важное о вашем компьютере — в одном месте.", "Понимайте назначение. Изменяйте осознанно.", "Настройте частоты, охлаждение и поведение устройств.", "Ваши инструменты. Одна очередь установки.", "Классические программы и пакеты Microsoft Store.", "Освободите место, сохранив личные файлы.", "Проверка защиты, план удаления и подробный отчёт.", "Результаты действий, ошибки и резервные копии.", "Внешний вид и данные приложения.", "Меньше фоновой работы. Больше ресурсов для важного.", "Оставьте при запуске только то, что действительно нужно.", "Отзывчивость, ввод и запись игр. Каждое изменение — под контролем.", "Сравните время кадров до и после настройки.", "Временные настройки на время игры. Возврат после выхода.", "Ваша видеокарта, частота экрана и параметры плавности.", "Приложения и компоненты. Предпросмотр, удаление, проверка." };
     public MainWindow(string[] startupArgs)
     {
         args = startupArgs;
@@ -119,8 +119,8 @@ public partial class MainWindow : Window
         var brand = Row(logo, new Border { Width = 12 }, Stack(Text("QIVORYX", 14, bold: true), Text("WINDOWS TOOLKIT", 9, "Muted")));brand.Margin = new(22, 28, 12, 32);sidebar.Children.Add(brand);
         nav.Margin = new(12, 0, 12, 0);var navScroll = new ScrollViewer { Content = nav, VerticalScrollBarVisibility = ScrollBarVisibility.Auto, HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled };Grid.SetRow(navScroll, 1); sidebar.Children.Add(navScroll);
         nav.Children.Add(new Border { Child = Text("ПРОИЗВОДИТЕЛЬНОСТЬ", 9, "Muted", true), Margin = new(14, 0, 0, 14) });
-        string[] glyphs = { "\uE80F", "\uE713", "\uE945", "\uE71D", "\uE74D", "\uE9D9", "\uEA18", "\uE81C", "\uE115", "\uE9D9", "\uE7E7", "\uE8F1", "\uE9D9", "\uE7FC", "\uE7F4" };
-        foreach (int i in new[] { 0, 9, 12, 13, 14, 11, 10, 1, 2, 3, 4, 5, 6, 7, 8 })
+        string[] glyphs = { "\uE80F", "\uE713", "\uE945", "\uE71D", "\uE74D", "\uE9D9", "\uEA18", "\uE81C", "\uE115", "\uE9D9", "\uE7E7", "\uE8F1", "\uE9D9", "\uE7FC", "\uE7F4", "\uE74D" };
+        foreach (int i in new[] { 0, 9, 12, 13, 14, 11, 10, 1, 2, 3, 4, 15, 5, 6, 7, 8 })
         {
             int index = i;
             if (i is 11 or 3 or 7)
@@ -133,7 +133,7 @@ public partial class MainWindow : Window
             b.HorizontalContentAlignment = HorizontalAlignment.Left;b.Padding = new(14, 11, 6, 11);b.Margin = new(0, 0, 0, 5);b.BorderThickness = new(0);b.Background = Brushes.Transparent;
             b.Tag = index;navigation.Add(b);nav.Children.Add(b);
         }
-        var bottom = Stack(Text("ВАШ ПК. ВАШИ ПРАВИЛА.", 9, "Muted", true), new Border { Height = 10 }, Text("v0.3.0  /  DESKTOP x64", 11, "Muted"));bottom.Margin = new(26, 22, 12, 24);Grid.SetRow(bottom, 2);sidebar.Children.Add(bottom);
+        var bottom = Stack(Text("ВАШ ПК. ВАШИ ПРАВИЛА.", 9, "Muted", true), new Border { Height = 10 }, Text("v0.4.0  /  DESKTOP x64", 11, "Muted"));bottom.Margin = new(26, 22, 12, 24);Grid.SetRow(bottom, 2);sidebar.Children.Add(bottom);
         var main = new Grid();Grid.SetColumn(main, 1);root.Children.Add(main);
         main.RowDefinitions.Add(new() { Height = GridLength.Auto });main.RowDefinitions.Add(new());main.RowDefinitions.Add(new() { Height = new(40) });
         var top = new Grid { Margin = new(34, 24, 30, 24) };top.ColumnDefinitions.Add(new());top.ColumnDefinitions.Add(new() { Width = GridLength.Auto });
@@ -171,7 +171,7 @@ public partial class MainWindow : Window
                 case 3: Catalog();break;
                 case 4: await Uninstall(token);break;
                 case 5: Cleanup();break;
-                case 6: Defender();break;
+                case 6: await NativeDefender(token);break;
                 case 7: Journal();break;
                 case 8: Settings();break;
                 case 9: await Optimization(token);break;
@@ -180,6 +180,7 @@ public partial class MainWindow : Window
                 case 12: FrameLab();break;
                 case 13: GameSessions();break;
                 case 14: await Gpu(token);break;
+                case 15: await RemovalCenter(token);break;
             }
             if (token == generation) AnimatePage();
         }
@@ -276,7 +277,7 @@ public partial class MainWindow : Window
     }
     void Settings()
     {
-        content.Children.Add(Note("Qivoryx 0.3.0", $"Набор инструментов для Windows 10/11 x64. Режим: {(Engine.Portable ? "портативный" : "установленный")}. Настройки, журнал и копии: {Engine.Store}. Установленный .NET не требуется."));
+        content.Children.Add(Note("Qivoryx 0.4.0", $"Набор инструментов для Windows 10/11 x64. Режим: {(Engine.Portable ? "портативный" : "установленный")}. Настройки, журнал и копии: {Engine.Store}. Установленный .NET не требуется."));
         content.Children.Add(Card(Stack(Text("Оформление", 18, bold: true), new Border { Height = 16 }, Row(Button("Тёмная", () => { light = false;SaveTheme();SetTheme();_ = Navigate(8); }), Button("Светлая", () => { light = true;SaveTheme();SetTheme();_ = Navigate(8); })))));
         content.Children.Add(Card(Stack(Text("Данные и диагностика", 18, bold: true), new Border { Height = 12 }, Text("Журнал содержит имена пакетов, служб и пути на вашем компьютере. Приложение не отправляет телеметрию. Установщики и winget обращаются к своим серверам.", 13, "Muted"), new Border { Height = 16 }, Row(Button("Открыть папку данных", () => Engine.Open(Engine.Store)), Button("Справка", () => Engine.Open(Path.Combine(Engine.Root, "README.md"))), Button("Защита системы", () => Engine.Open("SystemPropertiesProtection.exe"))))));
         content.Children.Add(Note("Границы поддержки", "Инвентаризация приложений включает Win32 (HKLM/HKCU, x86/x64) и Appx текущего пользователя. Портативные программы без регистрации, чужие профили, драйверы и компоненты CBS не являются обычными приложениями. Windows может запрещать удаление защищённых пакетов и Edge."));
@@ -306,7 +307,7 @@ public partial class MainWindow : Window
         {
             frameA = frameB = null;frameStatsA = frameStatsB = null;
             light = mode == 1;SetTheme();
-            foreach (int p in new[] { 0, 9, 12, 13, 14, 11, 10, 1, 2, 3, 4, 5, 6, 7, 8 })
+            foreach (int p in new[] { 0, 9, 12, 13, 14, 11, 10, 1, 2, 3, 4, 15, 5, 6, 7, 8 })
             {
                 await Navigate(p);await Task.Delay(350);UpdateLayout();
                 Save((FrameworkElement)Content, $"{(light ? "light" : "dark")}-{p}");
@@ -322,6 +323,24 @@ public partial class MainWindow : Window
                 }
                 if (p == 13) Check(Find<ComboBox>(content).Any(), "Game session renders plan and process controls without starting a session");
                 if (p == 14) Check(Find<Button>(content).Any(), "GPU inventory renders without changing a display mode");
+                if (p == 6)
+                {
+                    Check(Find<ListView>(content).Any(), "Native Defender plan renders exact component targets without applying changes");
+                    pageScroll.ScrollToVerticalOffset(550);await Task.Delay(160);Save((FrameworkElement)Content, $"{(light ? "light" : "dark")}-defender-plan");pageScroll.ScrollToTop();
+                }
+                if (p == 15)
+                {
+                    var list = Find<ListView>(content).First();
+                    var input = Find<TextBox>(content).First();
+                    input.Text = "7-Zip";
+                    if (list.Items.Count == 0) input.Text = "";
+                    Check(list.Items.Count > 0, "Removal center renders real installed application inventory");
+                    list.SelectedIndex = 0;
+                    for (int wait = 0; wait < 150 && busy > 0; wait++) await Task.Delay(200);
+                    Check(Find<TextBlock>(content).Any(t => t.Text == "ПЛАН УДАЛЕНИЯ"), "Application selection creates a readonly removal preview");
+                    Check(!Find<CheckBox>(content).Any(c => c.IsChecked == true), "Residual deletion is never preselected during preview");
+                    pageScroll.ScrollToVerticalOffset(650);await Task.Delay(160);Save((FrameworkElement)Content, $"{(light ? "light" : "dark")}-removal-plan");pageScroll.ScrollToTop();
+                }
                 if (p == 1)
                 {
                     var list = Find<ListView>(content).First();var input = Find<TextBox>(content).First();
@@ -370,14 +389,14 @@ public partial class MainWindow : Window
             }));
             Check(!Confirm("Проверка диалога", "Пример подтверждения системного действия. Отмена ничего не изменяет. Проверяем читаемость текста и кнопок в выбранной теме."), "Confirmation Cancel returns without a mutation");
             Width = 1100;Height = 730;
-            foreach (int minimumPage in new[] { 3, 12, 13, 14 })
+            foreach (int minimumPage in new[] { 3, 6, 12, 13, 14, 15 })
             {
                 await Navigate(minimumPage);await Task.Delay(350);Save((FrameworkElement)Content, $"{(light ? "light" : "dark")}-minimum-{minimumPage}");
             }
             Width = 1440;Height = 940;
         }
         await File.WriteAllTextAsync(Path.Combine(destination, "ui-assertions.json"), System.Text.Json.JsonSerializer.Serialize(assertions, new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
-        await File.WriteAllTextAsync(Path.Combine(destination, "smoke-complete.txt"), "All 30 page/theme combinations rendered. No mutation operations were invoked.");
+        await File.WriteAllTextAsync(Path.Combine(destination, "smoke-complete.txt"), "All 32 page/theme combinations rendered. No mutation operations were invoked.");
         Close();
     }
 }

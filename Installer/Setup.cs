@@ -162,7 +162,7 @@ public static class Setup
             }
             using(var key=Registry.CurrentUser.CreateSubKey(Key))
             {
-                key.SetValue("DisplayName","Qivoryx — Windows Toolkit");key.SetValue("DisplayVersion","0.3.0");key.SetValue("Publisher","Qivoryx");
+                key.SetValue("DisplayName","Qivoryx — Windows Toolkit");key.SetValue("DisplayVersion","0.4.0");key.SetValue("Publisher","Qivoryx");
                 key.SetValue("InstallLocation",InstallRoot);key.SetValue("DisplayIcon",Path.Combine(InstallRoot,"Qivoryx.exe"));key.SetValue("UninstallString","\""+Path.Combine(InstallRoot,"Uninstall.exe")+"\"");key.SetValue("NoModify",1);key.SetValue("NoRepair",1);
                 key.SetValue("EstimatedSize",(int)(Directory.GetFiles(InstallRoot,"*",SearchOption.AllDirectories).Sum(f=>new FileInfo(f).Length)/1024),RegistryValueKind.DWord);
             }
@@ -172,7 +172,7 @@ public static class Setup
     static void Verify(string output)
     {
         var target=Path.Combine(Path.GetDirectoryName(Path.GetFullPath(output)),"installer-payload-"+Guid.NewGuid().ToString("N"));Extract(target);
-        foreach(var name in new[]{"Qivoryx.exe","Backend.ps1","catalog.json","README.md","Integrations/DefenderKiller/sha256.json"}) if(!File.Exists(Path.Combine(target,name)))throw new Exception("Payload missing: "+name);
+        foreach(var name in new[]{"Qivoryx.exe","Backend.ps1","catalog.json","README.md","Modules/DefenderRemoval.ps1","Modules/AppRemoval.ps1"}) if(!File.Exists(Path.Combine(target,name)))throw new Exception("Payload missing: "+name);
         File.WriteAllText(output,"Verified payload: "+Directory.GetFiles(target,"*",SearchOption.AllDirectories).Length+" files. Extraction: "+target);
     }
     static void Shortcut(string path,string target)

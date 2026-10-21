@@ -24,6 +24,11 @@ jobs:
         run: dotnet run --project tests/FrameLabTests/FrameLabTests.csproj --configuration Release
       - name: Game session tests with substituted system operations
         run: dotnet run --project tests/GameSessions/GameSessions.csproj --configuration Release
+      - name: Isolated native removal tests
+        shell: powershell
+        run: |
+          & .\tests\app-removal.ps1
+          & .\tests\defender-removal.ps1
       - name: Parse PowerShell sources
         shell: pwsh
         run: |

@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text.Json;
@@ -175,42 +175,7 @@ public partial class MainWindow
         content.Children.Add(Note("Личные файлы сохраняются", "Загрузки, документы, рабочий стол, сохранения игр, cookies и пароли браузеров не входят в очистку. Корзина и точки восстановления не очищаются. Удаляются только файлы старше 48 часов; системные ссылки и занятые файлы пропускаются."));
         content.Children.Add(Card(Stack(Text("Другие диски и системное хранилище", 18, bold: true), new Border { Height = 10 }, Text("Откройте штатное управление хранилищем для анализа всех дисков, больших файлов, компонентов обновлений и рекомендаций Windows. Ручное удаление WinSxS не используется.", 12, "Muted"), new Border { Height = 16 }, Button("Хранилище Windows  ↗", () => Engine.Open("ms-settings:storagesense")))));
     }
-    void Defender()
-    {
-        var state = Text("Нажмите «Проверить состояние» для актуальных данных.", 13, "Muted");
-        content.Children.Add(Card(Stack(Text("Состояние защиты", 20, bold: true), new Border { Height = 16 }, state, new Border { Height = 18 }, Row(Button("Проверить состояние", async () =>
-        {
-            try { var r = await Query(new { op = "defenderStatus" }, "Проверка Defender");var d = r.data;state.Text = $"Антивирус включён: {d.GetProperty("Enabled")}\nЗащита в реальном времени: {d.GetProperty("Realtime")}\nЗащита от подделки: {d.GetProperty("Tamper")}\nВерсия: {d.GetProperty("Version")}"; }
-            catch (Exception ex) { Notify(ex.Message); }
-        }), Button("Безопасность Windows  ↗", () => Engine.Open("windowsdefender:"))))));
-        content.Children.Add(Card(Stack(Text("DefenderKiller / ваш архив", 21, bold: true), new Border { Height = 12 }, Text("Интеграция оригинального DefenderKiller.bat из переданного архива. Кнопка запускает его с параметром /DelWD — ручной выбор пункта меню не нужен.", 13), new Border { Height = 14 }, Text("Этот инструмент удаляет также SmartScreen, службы центра безопасности и другие компоненты. Его бинарные помощники не проверены исходным кодом. Может потребоваться перезагрузка; восстановление зависит от созданной им копии. Это не штатное удаление Microsoft.", 13, "Muted"), new Border { Height = 14 }, Text("Несмотря на название «тихий режим» в BAT, в нём остаются окна резервного копирования и паузы. Поэтому запуск видимый: приложение не скрывает запросы, не отвечает за вас и не сообщает об успехе только по коду выхода BAT.", 12, "Muted"), new Border { Height = 22 }, Row(Button("Удалить через DefenderKiller", LaunchDefender), Button("Открыть папку инструмента", () => Engine.Open(Path.Combine(Engine.Root, "Integrations", "DefenderKiller")))))));
-        content.Children.Add(Note("До запуска", "Создайте образ системы или другую проверенную резервную копию. Удаление антивируса снижает защиту и может нарушить обслуживание Windows. Автоматическое восстановление Defender в Qivoryx не реализовано; исходный инструмент содержит собственное меню восстановления."));
-    }
-    void LaunchDefender()
-    {
-        if (busy > 0) { Notify("Дождитесь текущей операции.");return; }
-        var folder = Path.Combine(Engine.Root, "Integrations", "DefenderKiller");
-        var bat = Path.Combine(folder, "DefenderKiller.bat");var manifest = Path.Combine(folder, "sha256.json");
-        try
-        {
-            if (!File.Exists(bat) || !File.Exists(manifest)) throw new Exception("Файлы интеграции не найдены. Распакуйте портативную сборку полностью.");
-            var hashes = JsonSerializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(manifest))!;
-            if (folder.IndexOfAny(new[] { '(', ')', '!' }) >= 0) throw new Exception("Исходный BAT не поддерживает пути со скобками или !. Перенесите portable в простой путь без этих символов.");
-            foreach (var entry in hashes)
-            {
-                var path = Path.GetFullPath(Path.Combine(folder, entry.Key));
-                if (!path.StartsWith(Path.GetFullPath(folder) + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase)) throw new Exception("Неверный манифест интеграции.");
-                using var stream = File.OpenRead(path);if (!Convert.ToHexString(SHA256.HashData(stream)).Equals(entry.Value, StringComparison.OrdinalIgnoreCase)) throw new Exception("Файл инструмента изменён: " + entry.Key + ". Запуск отменён.");
-            }
-            if (!Confirm("Удалить Defender сторонним инструментом?", "Будет запущен DefenderKiller.bat /DelWD из вашего архива с правами администратора. Он изменяет защищённые файлы и службы Windows, включая компоненты помимо Defender.\n\nУбедитесь, что резервная копия создана и вы готовы восстановить систему. Внешний инструмент покажет собственные диалоги. После запуска не закрывайте его до завершения. Это действие не тестировалось на вашем компьютере.", "Запустить удаление")) return;
-            Engine.Open(folder); // Keep its recovery files easy to locate.
-            var p = Process.Start(new ProcessStartInfo("cmd.exe") { Arguments = $"/d /c \"\"{bat}\" /DelWD\"", WorkingDirectory = folder, UseShellExecute = true, Verb = "runas", WindowStyle = ProcessWindowStyle.Normal });
-            File.AppendAllText(Engine.LogPath, $"\n[{DateTimeOffset.Now:u}] DefenderKiller /DelWD: передан внешний запуск. Результат не подтверждён.\n");
-            Notify("Инструмент запущен отдельно. Следуйте его диалогам; затем проверьте состояние защиты.");
-        }
-        catch (System.ComponentModel.Win32Exception ex) when (ex.NativeErrorCode == 1223) { Notify("Запуск отменён в UAC."); }
-        catch (Exception ex) { Notify(ex.Message); }
-    }
+
 }
 
 // Attached hint shown as tooltip and exposed to accessibility clients.
