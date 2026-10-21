@@ -1,0 +1,7 @@
+{
+  "provider": "ElevenLabs",
+  "model": "eleven_multilingual_v2",
+  "voice": "Arseniy",
+  "voice_id": "fmZEtrbS5wudON3ynVP2",
+  "language": "ru"
+}

@@ -1,0 +1,53 @@
+name: Build and checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    name: Windows app and isolated tests
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-dotnet@v6.0.0
+        with:
+          dotnet-version: 8.0.x
+      - name: Build WPF application
+        run: dotnet build Tweaker/Tweaker.csproj --configuration Release
+      - name: Frame analysis tests
+        run: dotnet run --project tests/FrameLabTests/FrameLabTests.csproj --configuration Release
+      - name: Game session tests with substituted system operations
+        run: dotnet run --project tests/GameSessions/GameSessions.csproj --configuration Release
+      - name: Parse PowerShell sources
+        shell: pwsh
+        run: |
+          $failed = $false
+          Get-ChildItem Tweaker,tests -Recurse -Filter *.ps1 | ForEach-Object {
+            $tokens = $null
+            $parseErrors = $null
+            [System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$parseErrors) | Out-Null
+            if ($parseErrors.Count) { $failed = $true; Write-Output $parseErrors }
+          }
+          if ($failed) { throw 'PowerShell parse errors' }
+
+  video:
+    name: Remotion TypeScript and ESLint
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: qivoryx-video
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: qivoryx-video/package-lock.json
+      - run: npm ci
+      - run: npm run lint

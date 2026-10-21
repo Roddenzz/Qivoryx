@@ -1,0 +1,2310 @@
+[
+  {
+    "Id": "Telegram.TelegramDesktop",
+    "Name": "Telegram",
+    "Category": "Связь",
+    "Description": "Сообщения, звонки и каналы",
+    "Website": "https://desktop.telegram.org",
+    "Url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.1/td-setup-win-x64-7.3.1.exe",
+    "Extension": "exe",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "SHA256": "D5534936DCB8913C250B9E0BC14EE438FEAF9CE3B5E076BA771B4211645ACC81",
+    "Version": "7.3.1",
+    "InstallerType": "inno",
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/Telegram/TelegramDesktop/7.3.1/Telegram.TelegramDesktop.installer.yaml",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Discord.Discord",
+    "Name": "Discord",
+    "Category": "Связь",
+    "Description": "Голосовые каналы и игровые сообщества",
+    "Website": "https://discord.com",
+    "Url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x64/1.0.9264/DiscordSetup.exe",
+    "Extension": "exe",
+    "Args": [
+      "--silent"
+    ],
+    "SHA256": "2C79A8ECCF972709DC04E014A9ED36D8DCC4CE84179741EB1424E022D4C3625C",
+    "Version": "1.0.9264",
+    "InstallerType": "exe",
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/Discord/Discord/1.0.9264/Discord.Discord.installer.yaml",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "TeamSpeakSystems.TeamSpeakClient",
+    "Name": "TeamSpeak",
+    "Category": "Связь",
+    "Description": "Голосовая связь с низкой задержкой",
+    "Website": "https://teamspeak.com",
+    "Url": "https://files.teamspeak-services.com/releases/client/3.6.2/TeamSpeak3-Client-win64-3.6.2.exe",
+    "SHA256": "EAB9E0C1A7134643E5F7116B7E0E58FAFFB20D6DB528F8B333D2C2B5D1AB68AE",
+    "Version": "3.6.2",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S",
+      "/ALLUSERS"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/TeamSpeakSystems/TeamSpeakClient/3.6.2/TeamSpeakSystems.TeamSpeakClient.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "OpenWhisperSystems.Signal",
+    "Name": "Signal",
+    "Category": "Связь",
+    "Description": "Личные сообщения и звонки",
+    "Website": "https://signal.org",
+    "Url": "https://updates.signal.org/desktop/signal-desktop-win-8.32.0.exe",
+    "SHA256": "BDEA93896BEC3D067DB8EBEE1656154E0D3533D4B2CFEAAC4B9C9A85DAC40A7E",
+    "Version": "8.32.0",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/OpenWhisperSystems/Signal/8.32.0/OpenWhisperSystems.Signal.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Beeper.Beeper",
+    "Name": "Beeper",
+    "Category": "Связь",
+    "Description": "Объединённый клиент мессенджеров",
+    "Website": "https://www.beeper.com",
+    "Url": "https://beeper-desktop.download.beeper.com/builds/Beeper%20x64%204.3.209.exe",
+    "SHA256": "A0C16B3748613B5F36DEC2C69E2BA2EDB9C9F45790A97D2BEF00FE73655ED54A",
+    "Version": "4.3.209",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Beeper/Beeper/4.3.209/Beeper.Beeper.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Rakuten.Viber",
+    "Name": "Viber",
+    "Category": "Связь",
+    "Description": "Мессенджер и видеозвонки",
+    "Website": "https://www.viber.com",
+    "Url": "https://download.cdn.viber.com/desktop/windows/29.1.0/ViberSetup.msi",
+    "SHA256": "57C06AE156FBCD8D91900B415D6CB27DBFBD8B8E5C7496A8FE9F805A08802D41",
+    "Version": "29.1.0.0",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/Rakuten/Viber/29.1.0.0/Rakuten.Viber.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "SlackTechnologies.Slack",
+    "Name": "Slack",
+    "Category": "Связь",
+    "Description": "Рабочие каналы и команды",
+    "Website": "https://slack.com",
+    "Url": "https://downloads.slack-edge.com/desktop-releases/windows/x64/4.52.182/SlackSetup.exe",
+    "SHA256": "E42DBA9622A297106F16A11F148C86E08BEEEEA6FE5BFD63DE4C606B513AB184",
+    "Version": "4.52.182",
+    "InstallerType": "exe",
+    "Args": [
+      "--silent"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/SlackTechnologies/Slack/4.52.182/SlackTechnologies.Slack.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Zoom.Zoom",
+    "Name": "Zoom",
+    "Category": "Связь",
+    "Description": "Видеоконференции и встречи",
+    "Website": "https://zoom.us",
+    "Url": "https://zoom.us/client/7.2.1.48556/ZoomInstallerFull.msi?archType=x64",
+    "SHA256": "B0DAC9FA5237D2E18144CA723644460E7CC26675E5D3DB0F89FDFE47AD8C429B",
+    "Version": "7.2.48556",
+    "InstallerType": "msi",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/z/Zoom/Zoom/7.2.48556/Zoom.Zoom.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.Teams",
+    "Name": "Microsoft Teams",
+    "Category": "Связь",
+    "Description": "Командная работа и видеосвязь",
+    "Website": "https://www.microsoft.com/microsoft-teams",
+    "Url": "https://teamsinstaller.public.onecdn.static.microsoft/production-windows-x64/26198.304.4946.9672/MSTeams-x64.msix",
+    "Extension": "msix",
+    "Args": [],
+    "SHA256": "9A6C64989E449EC2478873D0C6045CE61F4D516A0E4E19DFD45126FAA6A232EA",
+    "Version": "26198.304.4946.9672",
+    "InstallerType": "msix",
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Teams/26198.304.4946.9672/Microsoft.Teams.installer.yaml",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Element.Element",
+    "Name": "Element",
+    "Category": "Связь",
+    "Description": "Клиент защищённой сети Matrix",
+    "Website": "https://element.io",
+    "Url": "https://packages.element.io/desktop/install/win32/x64/Element%20Setup%201.12.32.exe",
+    "SHA256": "633A783365293916580FE8A589F3B0C8CAD9E2311F45F65E2F527AA6DDA72D5A",
+    "Version": "1.12.32",
+    "InstallerType": "exe",
+    "Args": [
+      "--silent"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/Element/Element/1.12.32/Element.Element.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Mumble.Mumble.Client",
+    "Name": "Mumble",
+    "Category": "Связь",
+    "Description": "Голосовая связь с открытым кодом",
+    "Website": "https://www.mumble.info",
+    "Url": "https://github.com/mumble-voip/mumble/releases/download/v1.5.915/mumble_client-1.5.915.x64.exe",
+    "SHA256": "2E867930C78E02A0ED87509757E318375B267CB449A77DAFEDC3ECE4DAEDCCAA",
+    "Version": "1.5.915",
+    "InstallerType": "burn",
+    "Args": [
+      "/quiet",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Mumble/Mumble/Client/1.5.915/Mumble.Mumble.Client.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Tencent.WeChat",
+    "Name": "WeChat",
+    "Category": "Связь",
+    "Description": "Сообщения и общение",
+    "Website": "https://www.wechat.com",
+    "Url": "https://dldir1v6.qq.com/weixin/Windows/WeChatSetup.exe",
+    "SHA256": "C29FC05630CFC95EF6483F6B5B52AABFE74265BB260E210E78AE437D305D8990",
+    "Version": "3.9.12.57",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/Tencent/WeChat/3.9.12.57/Tencent.WeChat.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Mozilla.Firefox",
+    "Name": "Firefox",
+    "Category": "Браузеры",
+    "Description": "Браузер с независимым движком",
+    "Website": "https://www.mozilla.org/firefox",
+    "Url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/157.0.1/win64/en-US/Firefox%20Setup%20157.0.1.exe",
+    "Extension": "exe",
+    "Args": [
+      "/S",
+      "/PreventRebootRequired=true"
+    ],
+    "SHA256": "71DC620E7749BB65BE6DF67B99261A303805A804F9C787B76B81C095CFA7D9CA",
+    "Version": "157.0.1",
+    "InstallerType": "nullsoft",
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Mozilla/Firefox/157.0.1/Mozilla.Firefox.installer.yaml",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Google.Chrome",
+    "Name": "Google Chrome",
+    "Category": "Браузеры",
+    "Description": "Браузер и синхронизация Google",
+    "Website": "https://www.google.com/chrome",
+    "Url": "https://dl.google.com/dl/chrome/install/googlechromestandaloneenterprise64.msi",
+    "Extension": "msi",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "SHA256": "9B7615C72F17F5EF7FA5CF3C7DBF872CEBE9E8EBEAE7786BB96B490214EFB31C",
+    "Version": "155.0.8059.85",
+    "InstallerType": "wix",
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Google/Chrome/155.0.8059.85/Google.Chrome.installer.yaml",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Brave.Brave",
+    "Name": "Brave",
+    "Category": "Браузеры",
+    "Description": "Браузер с защитой приватности",
+    "Website": "https://brave.com",
+    "Url": "https://github.com/brave/brave-browser/releases/download/v1.97.56/BraveBrowserStandaloneSilentSetup.exe",
+    "SHA256": "860FCD9B0DAAA7D2647D5230B16AA7B7F1BE0CA03DB49944A925E24A2600A9A2",
+    "Version": "155.1.97.56",
+    "InstallerType": "exe",
+    "Args": [],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Brave/Brave/155.1.97.56/Brave.Brave.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": [
+      -2147219416
+    ]
+  },
+  {
+    "Id": "Vivaldi.Vivaldi",
+    "Name": "Vivaldi",
+    "Category": "Браузеры",
+    "Description": "Гибко настраиваемый браузер",
+    "Website": "https://vivaldi.com",
+    "Url": "https://downloads.vivaldi.com/stable/Vivaldi.8.2.4133.89.x64.exe",
+    "SHA256": "6F91A1CD31C3F9D550458DA0C5912509212EA4BB72D6B30AC355CC749F42EA7D",
+    "Version": "8.2.4133.89",
+    "InstallerType": "exe",
+    "Args": [
+      "--vivaldi-silent",
+      "--do-not-launch-chrome"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/v/Vivaldi/Vivaldi/8.2.4133.89/Vivaldi.Vivaldi.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Opera.Opera",
+    "Name": "Opera",
+    "Category": "Браузеры",
+    "Description": "Браузер со встроенными инструментами",
+    "Website": "https://www.opera.com",
+    "Url": "https://get.geo.opera.com/pub/opera/desktop/137.0.6036.39/win/Opera_137.0.6036.39_Setup_x64.exe",
+    "SHA256": "95BDD5ACC7C5BA4A59D6BAA32EF649D2CF4C30DE35F86A29AB99C4BA1AB9DAAB",
+    "Version": "137.0.6036.39",
+    "InstallerType": "exe",
+    "Args": [
+      "/silent",
+      "/allusers=0"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/Opera/Opera/137.0.6036.39/Opera.Opera.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Opera.OperaGX",
+    "Name": "Opera GX",
+    "Category": "Браузеры",
+    "Description": "Игровой браузер с лимитами ресурсов",
+    "Website": "https://www.opera.com/gx",
+    "Url": "https://get.geo.opera.com/pub/opera_gx/137.0.6036.65/win/Opera_GX_137.0.6036.65_Setup_x64.exe",
+    "SHA256": "DB32B29BDB6387C5ACE2BA72B58EA5E25DC598EC1FB388A9E6CA01418D02039A",
+    "Version": "137.0.6036.65",
+    "InstallerType": "exe",
+    "Args": [
+      "/silent",
+      "/allusers=0"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/Opera/OperaGX/137.0.6036.65/Opera.OperaGX.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.Edge",
+    "Name": "Microsoft Edge",
+    "Category": "Браузеры",
+    "Description": "Браузер Microsoft на Chromium",
+    "Website": "https://www.microsoft.com/edge",
+    "Url": "https://download.microsoft.com/download/48b150aa-ac45-4ff0-9d3f-9bcf1615f4f4/MicrosoftEdgeEnterpriseX64.msi",
+    "SHA256": "20119979EB1670F670D38C093FD1C61F5A91D880C473F8614825CE9AEF35F68A",
+    "Version": "155.0.4283.62",
+    "InstallerType": "msi",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Edge/155.0.4283.62/Microsoft.Edge.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "TorProject.TorBrowser",
+    "Name": "Tor Browser",
+    "Category": "Браузеры",
+    "Description": "Браузер для работы через сеть Tor",
+    "Website": "https://www.torproject.org",
+    "Url": "https://archive.torproject.org/tor-package-archive/torbrowser/15.0.25/tor-browser-windows-x86_64-portable-15.0.25.exe",
+    "SHA256": "948F79F7312C7B62DFFEB1D65A51D49EA6BCB22B47B271FDD2EDEE9D5E22D561",
+    "Version": "15.0.25",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/TorProject/TorBrowser/15.0.25/TorProject.TorBrowser.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "VideoLAN.VLC",
+    "Name": "VLC",
+    "Category": "Медиа",
+    "Description": "Универсальный видео- и аудиоплеер",
+    "Website": "https://www.videolan.org/vlc",
+    "Url": "https://download.videolan.org/pub/videolan/vlc/3.0.24/win64/vlc-3.0.24-win64.msi",
+    "SHA256": "22172095CE4C2D5F5B600BB4C142D78105DB29A77FA59A931941876F3B20F6D0",
+    "Version": "3.0.24",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/v/VideoLAN/VLC/3.0.24/VideoLAN.VLC.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "clsid2.mpc-hc",
+    "Name": "MPC-HC",
+    "Category": "Медиа",
+    "Description": "Лёгкий видеоплеер с кодеками",
+    "Website": "https://github.com/clsid2/mpc-hc",
+    "Url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.4/MPC-HC.2.8.4.x64.exe",
+    "SHA256": "8340EB8847006EE1EFE154E3172E324565F05659439E31579CE9DFF9BB6816B8",
+    "Version": "2.8.4",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/clsid2/mpc-hc/2.8.4/clsid2.mpc-hc.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "MPC-BE.MPC-BE",
+    "Name": "MPC-BE",
+    "Category": "Медиа",
+    "Description": "Видеоплеер Media Player Classic BE",
+    "Website": "https://sourceforge.net/projects/mpcbe",
+    "Url": "https://github.com/Aleksoid1978/MPC-BE/releases/download/1.9.2/MPC-BE.1.9.2.x64-installer.zip",
+    "SHA256": "4E6D4034A52ED7BC4703A42D78B559F303A8F6B7EED777304FE25ECCC4FC4602",
+    "Version": "1.9.2",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/MPC-BE/MPC-BE/1.9.2/MPC-BE.MPC-BE.installer.yaml",
+    "Extension": "zip",
+    "NestedPath": "MPC-BE.1.9.2.x64.exe",
+    "PortableAlias": "",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "PeterPawlowski.foobar2000",
+    "Name": "foobar2000",
+    "Category": "Медиа",
+    "Description": "Аудиоплеер с тонкой настройкой",
+    "Website": "https://www.foobar2000.org",
+    "Url": "https://www.foobar2000.org/files/foobar2000-x64_v2.26.1.exe",
+    "SHA256": "72FE15A88B085EE4E49D68114E2BB9655000C2E0FDF40DCC128BBEF8BCAF3600",
+    "Version": "2.26.1",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/PeterPawlowski/foobar2000/2.26.1/PeterPawlowski.foobar2000.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "AIMP.AIMP",
+    "Name": "AIMP",
+    "Category": "Медиа",
+    "Description": "Музыкальный плеер и медиатека",
+    "Website": "https://www.aimp.ru",
+    "Url": "https://aimp.ru/files/windows/builds/aimp_5.10.2418_w64.exe",
+    "SHA256": "BEEC5CD3D3E61B314C4505B79EDB93C2F0ED85CA08FD70393724FE80CCA70420",
+    "Version": "5.10.2418",
+    "InstallerType": "exe",
+    "Args": [
+      "/AUTO",
+      "/SILENT"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/AIMP/AIMP/5.10.2418/AIMP.AIMP.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Spotify.Spotify",
+    "Name": "Spotify",
+    "Category": "Медиа",
+    "Description": "Музыкальный стриминг",
+    "Website": "https://www.spotify.com",
+    "Url": "https://download.scdn.co/SpotifyFullSetupX64.exe",
+    "SHA256": "8FB1A849EA283C5AFF06C0B14E1631F17D939A06BAC3279701566EA2AA2EBE5E",
+    "Version": "1.3.5.3058.g5d40d5480152",
+    "InstallerType": "exe",
+    "Args": [
+      "/silent",
+      "/skip-app-launch"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/Spotify/Spotify/1.3.5.3058.g5d40d5480152/Spotify.Spotify.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Apple.iTunes",
+    "Name": "iTunes",
+    "Category": "Медиа",
+    "Description": "Медиатека и устройства Apple",
+    "Website": "https://www.apple.com/itunes",
+    "Url": "https://secure-appldnld.apple.com/itunes12/140-75773-20260908-6e5e0165-99cb-4b30-b541-1b615fccfc1a/iTunes64Setup.exe",
+    "SHA256": "25B28905A81406A5EDBF482F7F3EE4831A8641D32D29DCEDA5D1EB3E8D534C08",
+    "Version": "12.13.11.1",
+    "InstallerType": "exe",
+    "Args": [
+      "/quiet",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Apple/iTunes/12.13.11.1/Apple.iTunes.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": [
+      1638
+    ]
+  },
+  {
+    "Id": "OBSProject.OBSStudio",
+    "Name": "OBS Studio",
+    "Category": "Медиа",
+    "Description": "Запись экрана и прямые трансляции",
+    "Website": "https://obsproject.com",
+    "Url": "https://github.com/obsproject/obs-studio/releases/download/32.2.2/OBS-Studio-32.2.2-Windows-x64-Installer.exe",
+    "SHA256": "C3A0B880ADBE64DC4BCB68F93016916AB5B55AE43FD227115287BF80257D92DC",
+    "Version": "32.2.2",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/OBSProject/OBSStudio/32.2.2/OBSProject.OBSStudio.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Audacity.Audacity",
+    "Name": "Audacity",
+    "Category": "Медиа",
+    "Description": "Запись и редактирование аудио",
+    "Website": "https://www.audacityteam.org",
+    "Url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-x86_64.msi",
+    "SHA256": "EFB652BF04168F5D4893F28B7CEFAAF5EF385D9251544540AC774E3BF54793A3",
+    "Version": "4.0.1.262721353",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Audacity/Audacity/4.0.1.262721353/Audacity.Audacity.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "HandBrake.HandBrake",
+    "Name": "HandBrake",
+    "Category": "Медиа",
+    "Description": "Конвертация и сжатие видео",
+    "Website": "https://handbrake.fr",
+    "Url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64-Win_GUI.exe",
+    "SHA256": "6BECB8E5A041941D5F2FD6FE83C66FC15B2B16190E2E79F5AD47EB4CD18DF8CD",
+    "Version": "1.11.2",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/h/HandBrake/HandBrake/1.11.2/HandBrake.HandBrake.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Gyan.FFmpeg",
+    "Name": "FFmpeg",
+    "Category": "Медиа",
+    "Description": "Инструменты обработки аудио и видео",
+    "Website": "https://ffmpeg.org",
+    "Url": "https://github.com/GyanD/codexffmpeg/releases/download/9.0.2/ffmpeg-9.0.2-full_build.zip",
+    "SHA256": "759D0A9831C436A0EB331AD36F236C06CB04AAA0005DA46571F0E9D3D9206F6B",
+    "Version": "9.0.2",
+    "InstallerType": "portable",
+    "Args": [],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Gyan/FFmpeg/9.0.2/Gyan.FFmpeg.installer.yaml",
+    "Extension": "zip",
+    "NestedPath": "ffmpeg-9.0.2-full_build\\bin\\ffmpeg.exe",
+    "PortableAlias": "ffmpeg",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "CodecGuide.K-LiteCodecPack.Standard",
+    "Name": "K-Lite Codecs",
+    "Category": "Медиа",
+    "Description": "Набор мультимедийных кодеков",
+    "Website": "https://codecguide.com",
+    "Url": "https://files2.codecguide.com/K-Lite_Codec_Pack_2010_Standard.exe",
+    "SHA256": "1093C40857B9CB329DB8E9E5DACA77D0ACED7F1638F127E7B10C4F6DE6542C31",
+    "Version": "20.1.0",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/CodecGuide/K-LiteCodecPack/Standard/20.1.0/CodecGuide.K-LiteCodecPack.Standard.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Plex.Plex",
+    "Name": "Plex",
+    "Category": "Медиа",
+    "Description": "Проигрыватель и личная медиатека",
+    "Website": "https://www.plex.tv",
+    "Url": "https://downloads.plex.tv/plex-desktop/1.115.0.426-4e960a1d/windows/Plex-1.115.0.426-4e960a1d-x86_64.exe",
+    "SHA256": "979971F001A45909AEEDA9BFA72125DC5EC8D3779250BC5A3DA4E9504513F193",
+    "Version": "1.115.0",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Plex/Plex/1.115.0/Plex.Plex.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Jellyfin.JellyfinMediaPlayer",
+    "Name": "Jellyfin Player",
+    "Category": "Медиа",
+    "Description": "Клиент домашнего медиасервера",
+    "Website": "https://jellyfin.org",
+    "Url": "https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.12.0/JellyfinMediaPlayer-1.12.0-windows-x64.exe",
+    "SHA256": "AD1E39A997BCACA481E54F026F04BCA324AECF7A84D00DA1E7C43D1EB5EE7014",
+    "Version": "1.12.0",
+    "InstallerType": "burn",
+    "Args": [
+      "/quiet",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/Jellyfin/JellyfinMediaPlayer/1.12.0/Jellyfin.JellyfinMediaPlayer.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.VisualStudioCode",
+    "Name": "Visual Studio Code",
+    "Category": "Разработка",
+    "Description": "Редактор кода с расширениями",
+    "Website": "https://code.visualstudio.com",
+    "Url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/16507d91be0dc1ce4f94c04d4d0430210b8685d9/VSCodeUserSetup-x64-1.141.2.exe",
+    "Extension": "exe",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/mergetasks=!runcode"
+    ],
+    "SHA256": "9B9E7305BC5F2D9176DFF8263BA146FC7B0D65CE1FB499271FD7746EC53D66ED",
+    "Version": "1.142.0",
+    "InstallerType": "inno",
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/VisualStudioCode/1.142.0/Microsoft.VisualStudioCode.installer.yaml",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.VisualStudio.2022.Community",
+    "Name": "Visual Studio Community",
+    "Category": "Разработка",
+    "Description": "IDE для C++, C# и .NET",
+    "Website": "https://visualstudio.microsoft.com",
+    "Url": "https://download.visualstudio.microsoft.com/download/pr/c95450be-0a45-4779-b142-33f567ccfd6e/d52e18859b0996bac3a89ba7d07e180508e49eb55f824d7eda2822aded495020/vs_Community.exe",
+    "SHA256": "D52E18859B0996BAC3A89BA7D07E180508E49EB55F824D7EDA2822ADED495020",
+    "Version": "17.14.42",
+    "InstallerType": "exe",
+    "Args": [
+      "--quiet",
+      "--wait",
+      "--campaign",
+      "winget"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/VisualStudio/2022/Community/17.14.42/Microsoft.VisualStudio.2022.Community.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "JetBrains.IntelliJIDEA.Community",
+    "Name": "IntelliJ IDEA Community",
+    "Category": "Разработка",
+    "Description": "IDE для разработки на JVM",
+    "Website": "https://www.jetbrains.com/idea",
+    "Url": "https://download.jetbrains.com/idea/ideaIC-2025.2.6.2.exe",
+    "SHA256": "8393C2C9CCBD8581D646F01F0B6F0E7F78E58EBBE5CD8CBD95F9E236518E9FE8",
+    "Version": "2025.2.6.2",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/JetBrains/IntelliJIDEA/Community/2025.2.6.2/JetBrains.IntelliJIDEA.Community.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "JetBrains.PyCharm.Community",
+    "Name": "PyCharm Community",
+    "Category": "Разработка",
+    "Description": "Среда разработки на Python",
+    "Website": "https://www.jetbrains.com/pycharm",
+    "Url": "https://download.jetbrains.com/python/pycharm-community-2025.2.6.1.exe",
+    "SHA256": "CD9BAFFEC7DD2AB33494A6C3B11FC4F14318C3866343064FC625729E35C868DA",
+    "Version": "2025.2.6.1",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/JetBrains/PyCharm/Community/2025.2.6.1/JetBrains.PyCharm.Community.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "JetBrains.WebStorm",
+    "Name": "WebStorm",
+    "Category": "Разработка",
+    "Description": "IDE для JavaScript и TypeScript",
+    "Website": "https://www.jetbrains.com/webstorm",
+    "Url": "https://download.jetbrains.com/webstorm/WebStorm-2026.2.3.exe",
+    "SHA256": "0410D741ADE75E4723C27EC25C0D19300CE63443ABCFFD9D0330544300F14333",
+    "Version": "2026.2.3",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/JetBrains/WebStorm/2026.2.3/JetBrains.WebStorm.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "JetBrains.Rider",
+    "Name": "Rider",
+    "Category": "Разработка",
+    "Description": "IDE для .NET и игровых проектов",
+    "Website": "https://www.jetbrains.com/rider",
+    "Url": "https://download.jetbrains.com/rider/JetBrains.Rider-2026.2.1.exe",
+    "SHA256": "5726B642FDDC5B98AAB88218344D53C489493CF6F8990C7D5379EEE5E05F767B",
+    "Version": "2026.2.1",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/JetBrains/Rider/2026.2.1/JetBrains.Rider.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Notepad++.Notepad++",
+    "Name": "Notepad++",
+    "Category": "Разработка",
+    "Description": "Быстрый текстовый редактор",
+    "Website": "https://notepad-plus-plus.org",
+    "Url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.8.1/npp.8.9.8.1.Installer.x64.msi",
+    "SHA256": "0C4F4FE82BABD7688F5C1431B1357392491563AF6FFEDF4E37F5DE0BD71BABB4",
+    "Version": "8.9.8.1",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/n/Notepad++/Notepad++/8.9.8.1/Notepad++.Notepad++.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "SublimeHQ.SublimeText.4",
+    "Name": "Sublime Text",
+    "Category": "Разработка",
+    "Description": "Редактор текста и исходного кода",
+    "Website": "https://www.sublimetext.com",
+    "Url": "https://download.sublimetext.com/sublime_text_build_4215_x64_setup.exe",
+    "SHA256": "BAFEA3FFC2D151FBBF7269868D7EAAA20D7B884254AD5512C1548B6BEBFA7CDE",
+    "Version": "4.0.0.421500",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/SublimeHQ/SublimeText/4/4.0.0.421500/SublimeHQ.SublimeText.4.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Git.Git",
+    "Name": "Git",
+    "Category": "Разработка",
+    "Description": "Система контроля версий",
+    "Website": "https://git-scm.com",
+    "Url": "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/Git-2.55.0.5-64-bit.exe",
+    "SHA256": "D065A4E23C3D9A6B5073D609B5BE0830227EC3CA053C083BA385061DDFAF94C6",
+    "Version": "2.55.0.5",
+    "InstallerType": "inno",
+    "Args": [
+      "/SP-",
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Git/Git/2.55.0.5/Git.Git.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "GitHub.GitHubDesktop",
+    "Name": "GitHub Desktop",
+    "Category": "Разработка",
+    "Description": "Графический интерфейс Git",
+    "Website": "https://desktop.github.com",
+    "Url": "https://desktop.githubusercontent.com/releases/3.6.7-dbc92f97/GitHubDesktopSetup-x64.exe",
+    "SHA256": "2E38DB8D986884474A1E45AFDDF554A7187F42124BD38A3D7EA165BE7F77F90D",
+    "Version": "3.6.7",
+    "InstallerType": "exe",
+    "Args": [
+      "--silent"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GitHub/GitHubDesktop/3.6.7/GitHub.GitHubDesktop.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "OpenJS.NodeJS.LTS",
+    "Name": "Node.js LTS",
+    "Category": "Разработка",
+    "Description": "Среда выполнения JavaScript",
+    "Website": "https://nodejs.org",
+    "Url": "https://nodejs.org/dist/v24.20.0/node-v24.20.0-x64.msi",
+    "SHA256": "28B69132C35CCC033BF8F2A67CD10C9D75EF5822593363309DA448F2AFFF2D8A",
+    "Version": "24.20.0",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/OpenJS/NodeJS/LTS/24.20.0/OpenJS.NodeJS.LTS.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Python.Python.3.13",
+    "Name": "Python 3.13",
+    "Category": "Разработка",
+    "Description": "Язык и среда выполнения Python",
+    "Website": "https://www.python.org",
+    "Url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-amd64.exe",
+    "SHA256": "EDEC09C4853AEAE9AC36EFB8C9F95B6B8E2FEE65EEE56D9767A8B7C69C574403",
+    "Version": "3.13.15",
+    "InstallerType": "burn",
+    "Args": [
+      "/quiet",
+      "/norestart",
+      "InstallAllUsers=0",
+      "PrependPath=1"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Python/Python/3/13/3.13.15/Python.Python.3.13.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Rustlang.Rustup",
+    "Name": "Rustup",
+    "Category": "Разработка",
+    "Description": "Установка компилятора и средств Rust",
+    "Website": "https://rustup.rs",
+    "Url": "https://static.rust-lang.org/rustup/archive/1.29.1/x86_64-pc-windows-msvc/rustup-init.exe",
+    "SHA256": "6F4BEF66261261FCB43131BE8720BAB817D403A09EDEC7455C371974B90BDB7E",
+    "Version": "1.29.1",
+    "InstallerType": "exe",
+    "Args": [
+      "-y",
+      "-q"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/Rustlang/Rustup/1.29.1/Rustlang.Rustup.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "GoLang.Go",
+    "Name": "Go",
+    "Category": "Разработка",
+    "Description": "Компилятор и инструменты языка Go",
+    "Website": "https://go.dev",
+    "Url": "https://go.dev/dl/go1.27.0.windows-amd64.msi",
+    "SHA256": "728E9318C061B95082BCF167BAB8B6C6E0D91A045F89F403B3285FA39F0C455B",
+    "Version": "1.27.0",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GoLang/Go/1.27.0/GoLang.Go.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.DotNet.SDK.8",
+    "Name": ".NET SDK 8",
+    "Category": "Разработка",
+    "Description": "Средства сборки приложений .NET",
+    "Website": "https://dotnet.microsoft.com",
+    "Url": "https://download.microsoft.com/download/3c7802f1-46b4-47df-855f-52ec7b87612c/bc533d26-b454-4b90-beca-a771425dbbcb/dotnet-sdk-8.0.426-win-x64.exe",
+    "SHA256": "A87B838B4DA772967ACC40F4B9FA37A5AC16A4C89442C383FE4D3C738FFDA58F",
+    "Version": "8.0.426",
+    "InstallerType": "burn",
+    "Args": [
+      "/quiet",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/DotNet/SDK/8/8.0.426/Microsoft.DotNet.SDK.8.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Docker.DockerDesktop",
+    "Name": "Docker Desktop",
+    "Category": "Разработка",
+    "Description": "Контейнеры и локальная разработка",
+    "Website": "https://www.docker.com",
+    "Url": "https://desktop.docker.com/win/main/amd64/243774/Docker%20Desktop%20Installer.exe",
+    "SHA256": "3F75D46A07FF7C7ADCC42E55B2BAB862E25A459351723AC2633DE9AD22A5B4B6",
+    "Version": "4.96.0",
+    "InstallerType": "exe",
+    "Args": [
+      "install",
+      "--quiet",
+      "--accept-license",
+      "--backend=wsl-2",
+      "--no-windows-containers"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/Docker/DockerDesktop/4.96.0/Docker.DockerDesktop.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Postman.Postman",
+    "Name": "Postman",
+    "Category": "Разработка",
+    "Description": "Разработка и тестирование API",
+    "Website": "https://www.postman.com",
+    "Url": "https://dl.pstmn.io/download/version/12.33.1/windows_64",
+    "SHA256": "8F80127BBBBEC37E5435DB4C343B3E4C2EF1790A9DC53E36B3D558BFD66858CF",
+    "Version": "12.33.1",
+    "InstallerType": "exe",
+    "Args": [
+      "--silent"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Postman/Postman/12.33.1/Postman.Postman.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Insomnia.Insomnia",
+    "Name": "Insomnia",
+    "Category": "Разработка",
+    "Description": "Клиент HTTP и GraphQL API",
+    "Website": "https://insomnia.rest",
+    "Url": "https://github.com/Kong/insomnia/releases/download/core@13.3.1/Insomnia.Core-13.3.1.exe",
+    "SHA256": "FF4D012E135DF13CCE4FC9AFEEB50E11CF6D6E616AD22587B246BF9BBEB51522",
+    "Version": "13.3.1",
+    "InstallerType": "exe",
+    "Args": [
+      "--silent"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/i/Insomnia/Insomnia/13.3.1/Insomnia.Insomnia.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "DBBrowserForSQLite.DBBrowserForSQLite",
+    "Name": "DB Browser for SQLite",
+    "Category": "Разработка",
+    "Description": "Просмотр и изменение баз SQLite",
+    "Website": "https://sqlitebrowser.org",
+    "Url": "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1-win64.msi",
+    "SHA256": "D023D54B3A5DB10C7E896089BB3DBE6E7F4BC4EAA9BBECB34CA414BE5970F688",
+    "Version": "3.13.1",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart",
+      "SHORTCUT_SQLITE_DESKTOP=1",
+      "SHORTCUT_SQLCIPHER_DESKTOP=1",
+      "SHORTCUT_SQLITE_PROGRAMMENU=1",
+      "SHORTCUT_SQLCIPHER_PROGRAMMENU=1"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/DBBrowserForSQLite/DBBrowserForSQLite/3.13.1/DBBrowserForSQLite.DBBrowserForSQLite.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "DBeaver.DBeaver.Community",
+    "Name": "DBeaver",
+    "Category": "Разработка",
+    "Description": "Универсальный клиент баз данных",
+    "Website": "https://dbeaver.io",
+    "Url": "https://github.com/dbeaver/dbeaver/releases/download/26.2.0/dbeaver-ce-26.2.0-windows-x86_64.exe",
+    "SHA256": "009E8A99BE478261D09FDEB40AB5EF64BFE1F5FAF79288CAC670164719D921D2",
+    "Version": "26.2.0",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S",
+      "/currentuser"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/DBeaver/DBeaver/Community/26.2.0/DBeaver.DBeaver.Community.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.WindowsTerminal",
+    "Name": "Windows Terminal",
+    "Category": "Разработка",
+    "Description": "Терминал PowerShell, CMD и WSL",
+    "Website": "https://github.com/microsoft/terminal",
+    "Url": "https://github.com/microsoft/terminal/releases/download/v1.25.2733.0/Microsoft.WindowsTerminal_1.25.2733.0_8wekyb3d8bbwe.msixbundle",
+    "SHA256": "CCE6E9CC3C8457FA11CED1D2A7354888C7D6DB83C5ACE5D5891A52C95E3B21DA",
+    "Version": "1.25.2733.0",
+    "InstallerType": "msix",
+    "Args": [],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/WindowsTerminal/1.25.2733.0/Microsoft.WindowsTerminal.installer.yaml",
+    "Extension": "msixbundle",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.PowerShell",
+    "Name": "PowerShell",
+    "Category": "Разработка",
+    "Description": "Современная командная оболочка",
+    "Website": "https://github.com/PowerShell/PowerShell",
+    "Url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.7/PowerShell-7.6.7.msixbundle",
+    "SHA256": "4DDA8F77324028D2FC043A120CDDB9EA32465A96A31D48F6062DF2445FE12829",
+    "Version": "7.6.7.0",
+    "InstallerType": "msix",
+    "Args": [],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/PowerShell/7.6.7.0/Microsoft.PowerShell.installer.yaml",
+    "Extension": "msixbundle",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "WinSCP.WinSCP",
+    "Name": "WinSCP",
+    "Category": "Разработка",
+    "Description": "Передача файлов SFTP и FTP",
+    "Website": "https://winscp.net",
+    "Url": "https://sourceforge.net/projects/winscp/files/WinSCP/6.7/WinSCP-6.7-Setup.exe/download",
+    "SHA256": "C8E603088B608B6620CA8E06846486CFED48969B76B111F05A83A386A829207C",
+    "Version": "6.7",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/CURRENTUSER"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/w/WinSCP/WinSCP/6.7/WinSCP.WinSCP.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "PuTTY.PuTTY",
+    "Name": "PuTTY",
+    "Category": "Разработка",
+    "Description": "Клиент SSH и последовательных портов",
+    "Website": "https://www.chiark.greenend.org.uk/~sgtatham/putty",
+    "Url": "https://the.earth.li/~sgtatham/putty/0.85/w64/putty-64bit-0.85-installer.msi",
+    "SHA256": "2213EBACF962B709411D654A40087508A694756BC4E41C5A1C24AD86596B2511",
+    "Version": "0.85.0.0",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/PuTTY/PuTTY/0.85.0.0/PuTTY.PuTTY.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "HeidiSQL.HeidiSQL",
+    "Name": "HeidiSQL",
+    "Category": "Разработка",
+    "Description": "Клиент MySQL, MariaDB и SQL Server",
+    "Website": "https://www.heidisql.com",
+    "Url": "https://github.com/HeidiSQL/HeidiSQL/releases/download/v12.21/HeidiSQL_12.21.0.7344_Setup.exe",
+    "SHA256": "97ACF0344313C11BB89C001425A615722B745669E5FFD542E732C418A00E22ED",
+    "Version": "12.21.0.7344",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/CURRENTUSER"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/h/HeidiSQL/HeidiSQL/12.21.0.7344/HeidiSQL.HeidiSQL.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "BlenderFoundation.Blender",
+    "Name": "Blender",
+    "Category": "Дизайн",
+    "Description": "3D-моделирование и анимация",
+    "Website": "https://www.blender.org",
+    "Url": "https://download.blender.org/release/Blender5.2/blender-5.2.2-windows-x64.msi",
+    "SHA256": "8DAC2751EBE8E3867327EEC52F1EF9B344C0A27499BB6221A301B4B35F2828D1",
+    "Version": "5.2.2",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/BlenderFoundation/Blender/5.2.2/BlenderFoundation.Blender.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "GIMP.GIMP.3",
+    "Name": "GIMP",
+    "Category": "Дизайн",
+    "Description": "Редактор растровых изображений",
+    "Website": "https://www.gimp.org",
+    "Url": "https://download.gimp.org/gimp/v3.2/windows/gimp-3.2.6-setup.exe",
+    "SHA256": "9337CCCBC01D4098EE7A3DAB215B3AFBE6ECE99C5287C92441D6F12CF541EBCA",
+    "Version": "3.2.6.0",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/CURRENTUSER"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GIMP/GIMP/3/3.2.6.0/GIMP.GIMP.3.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Inkscape.Inkscape",
+    "Name": "Inkscape",
+    "Category": "Дизайн",
+    "Description": "Редактор векторной графики",
+    "Website": "https://inkscape.org",
+    "Url": "https://media.inkscape.org/dl/resources/file/inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed_xMx7DJV.msi",
+    "SHA256": "2FA033E95113AE83D6430B2479E7E63E4266D0632A5B03F99EE3DB9360E3B8B8",
+    "Version": "1.4.4",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/i/Inkscape/Inkscape/1.4.4/Inkscape.Inkscape.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "KDE.Krita",
+    "Name": "Krita",
+    "Category": "Дизайн",
+    "Description": "Цифровая живопись и иллюстрация",
+    "Website": "https://krita.org",
+    "Url": "https://download.kde.org/stable/krita/5.3.4.1/krita-x64-5.3.4.1-setup.exe",
+    "SHA256": "025523CF1751FF209FAF7ECFE1CFF851F2CDAB64ACB8C555B307B349AD56CE8F",
+    "Version": "5.3.4.1",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/k/KDE/Krita/5.3.4.1/KDE.Krita.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Figma.Figma",
+    "Name": "Figma",
+    "Category": "Дизайн",
+    "Description": "Интерфейсы и совместная работа",
+    "Website": "https://www.figma.com",
+    "Url": "https://desktop.figma.com/win/build/Figma-126.10.10.exe",
+    "SHA256": "2249956AC1ADB5FF1CBE50DCE8BF953BF2285A70F7A5C2CF87C40A0F5C8F7560",
+    "Version": "126.10.10",
+    "InstallerType": "exe",
+    "Args": [
+      "--silent"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/f/Figma/Figma/126.10.10/Figma.Figma.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "dotPDN.PaintDotNet",
+    "Name": "Paint.NET",
+    "Category": "Дизайн",
+    "Description": "Редактирование изображений",
+    "Website": "https://www.getpaint.net",
+    "Url": "https://github.com/paintdotnet/release/releases/download/v5.1.12/paint.net.5.1.12.winmsi.x64.zip",
+    "SHA256": "06B19498E02AD5BF24EF1AA19F9D9021C92FE7ABEEC04E18AEF4140EDDB366E3",
+    "Version": "5.1.12",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/dotPDN/PaintDotNet/5.1.12/dotPDN.PaintDotNet.installer.yaml",
+    "Extension": "zip",
+    "NestedPath": "paint.net.5.1.12.winmsi.x64.msi",
+    "PortableAlias": "",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "ShareX.ShareX",
+    "Name": "ShareX",
+    "Category": "Дизайн",
+    "Description": "Скриншоты и захват экрана",
+    "Website": "https://getsharex.com",
+    "Url": "https://github.com/ShareX/ShareX/releases/download/v21.0.0/ShareX-21.0.0-setup-x64.exe",
+    "SHA256": "F213ACA04D30E0E2DC7C43BC79ACAE8622BE291CEE6014A90962ED87EA5F10CC",
+    "Version": "21.0.0",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/NORUN"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/ShareX/ShareX/21.0.0/ShareX.ShareX.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Greenshot.Greenshot",
+    "Name": "Greenshot",
+    "Category": "Дизайн",
+    "Description": "Создание и разметка скриншотов",
+    "Website": "https://getgreenshot.org",
+    "Url": "https://github.com/greenshot/greenshot/releases/download/v1.3.328/Greenshot-INSTALLER-1.3.328-RELEASE.exe",
+    "SHA256": "5D6EC298FB30C010351C100D85DEC0FA6F2188833F2BC8EDF594D785D9AA478A",
+    "Version": "1.3.328",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/CURRENTUSER"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Greenshot/Greenshot/1.3.328/Greenshot.Greenshot.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "NickeManarin.ScreenToGif",
+    "Name": "ScreenToGif",
+    "Category": "Дизайн",
+    "Description": "Запись экрана в GIF и видео",
+    "Website": "https://www.screentogif.com",
+    "Url": "https://github.com/NickeManarin/ScreenToGif/releases/download/2.43.2/ScreenToGif.2.43.2.Package.x64.msix",
+    "SHA256": "8216469D4BC01243DA88188F186396001393D13A8D8D9D2804853C6C6C3AB166",
+    "Version": "2.43.2",
+    "InstallerType": "msix",
+    "Args": [],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/n/NickeManarin/ScreenToGif/2.43.2/NickeManarin.ScreenToGif.installer.yaml",
+    "Extension": "msix",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Meltytech.Shotcut",
+    "Name": "Shotcut",
+    "Category": "Дизайн",
+    "Description": "Нелинейный видеоредактор",
+    "Website": "https://shotcut.org",
+    "Url": "https://github.com/mltframework/shotcut/releases/download/v26.9.27/shotcut-win64-26.9.27.exe",
+    "SHA256": "77E1EE1F713D92BDBAFF23266F416E33CDE3D367F7EF518B1841DDC961D05AF9",
+    "Version": "26.9.27",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/CURRENTUSER"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Meltytech/Shotcut/26.9.27/Meltytech.Shotcut.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "KDE.Kdenlive",
+    "Name": "Kdenlive",
+    "Category": "Дизайн",
+    "Description": "Монтаж видео с открытым кодом",
+    "Website": "https://kdenlive.org",
+    "Url": "https://download.kde.org/stable/kdenlive/26.08/windows/kdenlive-26.08.2.exe",
+    "SHA256": "9F89D8AC53B190BA506AF86FB37B31F17B60A532394BD5303AF4E505B3A5BEE6",
+    "Version": "26.08.2",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S",
+      "/CurrentUser"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/k/KDE/Kdenlive/26.08.2/KDE.Kdenlive.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "TheDocumentFoundation.LibreOffice",
+    "Name": "LibreOffice",
+    "Category": "Офис",
+    "Description": "Документы, таблицы и презентации",
+    "Website": "https://www.libreoffice.org",
+    "Url": "https://download.documentfoundation.org/libreoffice/stable/26.8.1/win/x86_64/LibreOffice_26.8.1_Win_x86-64.msi",
+    "SHA256": "C6298B10CFA1748BCBEDAD94C62CE771E240E5021BFD6D7A967CD571B04B5312",
+    "Version": "26.8.1.1",
+    "InstallerType": "msi",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/TheDocumentFoundation/LibreOffice/26.8.1.1/TheDocumentFoundation.LibreOffice.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "ONLYOFFICE.DesktopEditors",
+    "Name": "ONLYOFFICE",
+    "Category": "Офис",
+    "Description": "Офисный пакет для документов",
+    "Website": "https://www.onlyoffice.com",
+    "Url": "https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v10.0.0/DesktopEditors_x64.exe",
+    "SHA256": "E9F6DF29BB09770CFC14C9EBB9BCE881FF7AD9705D76B3FAF038831FE248E46B",
+    "Version": "10.0.0",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/ONLYOFFICE/DesktopEditors/10.0.0/ONLYOFFICE.DesktopEditors.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "SumatraPDF.SumatraPDF",
+    "Name": "SumatraPDF",
+    "Category": "Офис",
+    "Description": "Лёгкий просмотр PDF и книг",
+    "Website": "https://www.sumatrapdfreader.org",
+    "Url": "https://www.sumatrapdfreader.org/dl/rel/3.6.1/SumatraPDF-3.6.1-64-install.exe",
+    "SHA256": "1EEE71CCCD2EA6E94D5BCEA54EE2F759844DA3E1A0EE2F6045035B1D17B94381",
+    "Version": "3.6.1",
+    "InstallerType": "exe",
+    "Args": [
+      "-s",
+      "-install",
+      "-with-preview"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/SumatraPDF/SumatraPDF/3.6.1/SumatraPDF.SumatraPDF.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Adobe.Acrobat.Reader.64-bit",
+    "Name": "Adobe Acrobat Reader",
+    "Category": "Офис",
+    "Description": "Просмотр и печать PDF",
+    "Website": "https://get.adobe.com/reader",
+    "Url": "https://ardownload3.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600222031/AcroRdrDCx642600222031_MUI.exe",
+    "SHA256": "6FF26E9D58DF0E6AF633CED481A1EFFF97F17A30D2B1554D054C398E824E7C77",
+    "Version": "26.002.22031",
+    "InstallerType": "exe",
+    "Args": [
+      "-sfx_nu",
+      "/sAll",
+      "/rs",
+      "/msi"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Adobe/Acrobat/Reader/64-bit/26.002.22031/Adobe.Acrobat.Reader.64-bit.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": [
+      1638
+    ]
+  },
+  {
+    "Id": "Notion.Notion",
+    "Name": "Notion",
+    "Category": "Офис",
+    "Description": "Заметки и рабочие пространства",
+    "Website": "https://www.notion.so",
+    "Url": "https://desktop-release.notion-static.com/Notion%20Setup%207.39.0.exe",
+    "SHA256": "97AA489F4BF1667FC7A58F140E3B03C6FDD78496AA7B743DC4FF766E035222CD",
+    "Version": "7.39.0",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/n/Notion/Notion/7.39.0/Notion.Notion.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Obsidian.Obsidian",
+    "Name": "Obsidian",
+    "Category": "Офис",
+    "Description": "Личная база знаний в Markdown",
+    "Website": "https://obsidian.md",
+    "Url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.4/Obsidian-1.14.4.exe",
+    "SHA256": "28662520368D5956DF7798076B8370AC730164A8863DCD4F678CED53F63FAA00",
+    "Version": "1.14.4",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S",
+      "/currentuser"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/Obsidian/Obsidian/1.14.4/Obsidian.Obsidian.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Joplin.Joplin",
+    "Name": "Joplin",
+    "Category": "Офис",
+    "Description": "Заметки с синхронизацией",
+    "Website": "https://joplinapp.org",
+    "Url": "https://github.com/laurent22/joplin/releases/download/v3.7.21/Joplin-Setup-3.7.21.exe",
+    "SHA256": "4222536C69360A30A566627B35C2E1CD8D38D0C79735EBDE4E39EDBCDDD750CD",
+    "Version": "3.7.21",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S",
+      "/currentuser"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/Joplin/Joplin/3.7.21/Joplin.Joplin.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Appest.TickTick",
+    "Name": "TickTick",
+    "Category": "Офис",
+    "Description": "Списки задач и планирование",
+    "Website": "https://ticktick.com",
+    "Url": "https://download.ticktick.app/download/win64/tick_win_setup_release_x64_8215.exe",
+    "SHA256": "A1BE5B73880950D6AF015F976F1E65BB065E1970FB702AA885EDCFA0F4112FCF",
+    "Version": "8.2.1.5",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Appest/TickTick/8.2.1.5/Appest.TickTick.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Doist.Todoist",
+    "Name": "Todoist",
+    "Category": "Офис",
+    "Description": "Управление личными задачами",
+    "Website": "https://todoist.com",
+    "Url": "https://electron-dl.todoist.net/windows/Todoist-win32-9.31.0-x64-latest.exe",
+    "SHA256": "00110EB28296CD86588F11626431792123C07A867FDF11953E8D3C68EEB91E1B",
+    "Version": "9.31.0",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/Doist/Todoist/9.31.0/Doist.Todoist.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Anki.Anki",
+    "Name": "Anki",
+    "Category": "Офис",
+    "Description": "Обучение с помощью карточек",
+    "Website": "https://apps.ankiweb.net",
+    "Url": "https://github.com/ankitects/anki/releases/download/26.09.3/anki-26.09.3-win-x64.msi",
+    "SHA256": "8A45823D1C31017CEBB7D3AF4493D69B6AE3C185345FCB2390EDE4AF01E0A950",
+    "Version": "26.09.3",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Anki/Anki/26.09.3/Anki.Anki.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Valve.Steam",
+    "Name": "Steam",
+    "Category": "Игры",
+    "Description": "Игровая библиотека и магазин",
+    "Website": "https://store.steampowered.com",
+    "Url": "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe",
+    "SHA256": "7D3654531C32D941B8CAE81C4137FC542172BFA9635F169CB392F245A0A12BCB",
+    "Version": "2.10.91.91",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/v/Valve/Steam/2.10.91.91/Valve.Steam.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "EpicGames.EpicGamesLauncher",
+    "Name": "Epic Games Launcher",
+    "Category": "Игры",
+    "Description": "Игры и Unreal Engine",
+    "Website": "https://store.epicgames.com",
+    "Url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Windows/EpicInstaller-20.3.3.msi?launcherfilename=EpicInstaller-20.3.3.msi",
+    "SHA256": "D55D79710EDFEAA107A62F2EA007BEC1EEEAC8B715A43C2BA3858EEC7BC60337",
+    "Version": "1.3.210.0",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/EpicGames/EpicGamesLauncher/1.3.210.0/EpicGames.EpicGamesLauncher.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "GOG.Galaxy",
+    "Name": "GOG Galaxy",
+    "Category": "Игры",
+    "Description": "Библиотека игр GOG",
+    "Website": "https://www.gog.com/galaxy",
+    "Url": "https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_2.1.10.56.exe",
+    "SHA256": "EC1EF3744A6BA365C022D5E114A482B74FF0496E00A91924EBDAE401E2C9291B",
+    "Version": "2.1.10.56",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GOG/Galaxy/2.1.10.56/GOG.Galaxy.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "ElectronicArts.EADesktop",
+    "Name": "EA app",
+    "Category": "Игры",
+    "Description": "Библиотека и игры Electronic Arts",
+    "Website": "https://www.ea.com/ea-app",
+    "Url": "https://origin-a.akamaihd.net/EA-Desktop-Client-Download/installer-releases/EAappInstaller-13.809.0.6322-16067214.exe",
+    "SHA256": "82E1CFA28C49B47A1B4684BFE57E9364FAFDEB46E473755E935C6C5C39A0EC35",
+    "Version": "13.809.0.6322",
+    "InstallerType": "burn",
+    "Args": [
+      "/passive",
+      "/norestart",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/ElectronicArts/EADesktop/13.809.0.6322/ElectronicArts.EADesktop.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Ubisoft.Connect",
+    "Name": "Ubisoft Connect",
+    "Category": "Игры",
+    "Description": "Библиотека игр Ubisoft",
+    "Website": "https://ubisoftconnect.com",
+    "Url": "https://static3.cdn.ubi.com/orbit/launcher_installer/UbisoftConnectInstaller.exe",
+    "SHA256": "3CEC13ADB297DAF861528CA59C94467D9AEE4B43B0089EBC211CF5DE16618503",
+    "Version": "174.2.0.13389",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/u/Ubisoft/Connect/174.2.0.13389/Ubisoft.Connect.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "PrismLauncher.PrismLauncher",
+    "Name": "Prism Launcher",
+    "Category": "Игры",
+    "Description": "Управление сборками Minecraft",
+    "Website": "https://prismlauncher.org",
+    "Url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-Windows-MSVC-Setup-11.1.1.exe",
+    "SHA256": "AAF1F371A41D530785B679E3A2E1141DCEEC98651FC35D56DC0842B2740280AE",
+    "Version": "11.1.1",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/PrismLauncher/PrismLauncher/11.1.1/PrismLauncher.PrismLauncher.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Playnite.Playnite",
+    "Name": "Playnite",
+    "Category": "Игры",
+    "Description": "Общая библиотека игровых лаунчеров",
+    "Website": "https://playnite.link",
+    "Url": "https://github.com/JosefNemec/Playnite/releases/download/10.58/Playnite1058.exe",
+    "SHA256": "ACF8BF9C50B8DC8552CEE43F348AE5C171AE5219FBAD6A916ED3B01E3E9335D7",
+    "Version": "10.58",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/NORESTART"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Playnite/Playnite/10.58/Playnite.Playnite.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Parsec.Parsec",
+    "Name": "Parsec",
+    "Category": "Игры",
+    "Description": "Удалённый доступ для игр и работы",
+    "Website": "https://parsec.app",
+    "Url": "https://builds.parsec.app/package/parsec-windows.exe",
+    "SHA256": "B8A9CD519010666DEF0EF6E119EB42B33B5B811216F34E4F6C8E2E25AC290FBC",
+    "Version": "150.104.1.0",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/silent",
+      "/norun",
+      "/nocleanuser",
+      "/allusers"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Parsec/Parsec/150.104.1.0/Parsec.Parsec.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "MoonlightGameStreamingProject.Moonlight",
+    "Name": "Moonlight",
+    "Category": "Игры",
+    "Description": "Клиент игрового стриминга",
+    "Website": "https://moonlight-stream.org",
+    "Url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/MoonlightSetup-6.2.0.exe",
+    "SHA256": "EE2A1B56EC83010F4F8A275BB71892A7DC7A3BC874DFAEBE706B74D5D10831BD",
+    "Version": "6.2.0.0",
+    "InstallerType": "burn",
+    "Args": [
+      "/quiet",
+      "/norestart",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/MoonlightGameStreamingProject/Moonlight/6.2.0.0/MoonlightGameStreamingProject.Moonlight.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "LizardByte.Sunshine",
+    "Name": "Sunshine",
+    "Category": "Игры",
+    "Description": "Сервер игрового стриминга",
+    "Website": "https://app.lizardbyte.dev/Sunshine",
+    "Url": "https://github.com/LizardByte/Sunshine/releases/download/v2026.914.233613/Sunshine-Windows-AMD64-installer.msi",
+    "SHA256": "1D7FED8BEECD5889DC7FF14CF9F42D6D38F37C3066C13C6C2A5F4E91847E0CCF",
+    "Version": "2026.914.233613",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/l/LizardByte/Sunshine/2026.914.233613/LizardByte.Sunshine.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "7zip.7zip",
+    "Name": "7-Zip",
+    "Category": "Утилиты",
+    "Description": "Архиватор 7z, ZIP и других форматов",
+    "Website": "https://www.7-zip.org",
+    "Url": "https://www.7-zip.org/a/7z2604-x64.msi",
+    "SHA256": "0B01334A418654293513449F61D6BFC99E5196CA371E3C3DC961EDA57CD535C6",
+    "Version": "26.04",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/7/7zip/7zip/26.04/7zip.7zip.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "RARLab.WinRAR",
+    "Name": "WinRAR",
+    "Category": "Утилиты",
+    "Description": "Архиватор RAR и ZIP",
+    "Website": "https://www.win-rar.com",
+    "Url": "https://www.rarlab.com/rar/winrar-x64-723.exe",
+    "SHA256": "8FF0DAF3ED564CC743C0E23FF2E253997FFC74460F9673F0B6DD037B2DB4CE7B",
+    "Version": "7.23.0",
+    "InstallerType": "exe",
+    "Args": [
+      "-s1"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/RARLab/WinRAR/7.23.0/RARLab.WinRAR.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.PowerToys",
+    "Name": "PowerToys",
+    "Category": "Утилиты",
+    "Description": "Расширенные инструменты Windows",
+    "Website": "https://github.com/microsoft/PowerToys",
+    "Url": "https://github.com/microsoft/PowerToys/releases/download/v0.101.2362.0/PowerToysUserSetup-0.101.2362.0-x64.exe",
+    "SHA256": "D56FA7130FA68AFE553068C15A59A6B24C8DBCC9A0989A43EF0FC5A373230DE3",
+    "Version": "0.101.2362.0",
+    "InstallerType": "burn",
+    "Args": [
+      "/quiet",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/PowerToys/0.101.2362.0/Microsoft.PowerToys.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "voidtools.Everything",
+    "Name": "Everything",
+    "Category": "Утилиты",
+    "Description": "Мгновенный поиск файлов по имени",
+    "Website": "https://www.voidtools.com",
+    "Url": "https://www.voidtools.com/Everything-1.4.1.1032.x64.msi",
+    "SHA256": "4E7A80885AAB8566B750C56A2A2B3E7C3C1F4920BCC53777E07F5EEB9E1F7485",
+    "Version": "1.4.1.1032",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/v/voidtools/Everything/1.4.1.1032/voidtools.Everything.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "AntibodySoftware.WizTree",
+    "Name": "WizTree",
+    "Category": "Утилиты",
+    "Description": "Анализ занятого места на дисках",
+    "Website": "https://diskanalyzer.com",
+    "Url": "https://diskanalyzer.com/files/wiztree_4_33_setup.exe",
+    "SHA256": "3C56DFC08F06C58B9A9133A137C8559E016749E1605CF81E1B1D6B1DEEAD2FF1",
+    "Version": "4.33",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/AntibodySoftware/WizTree/4.33/AntibodySoftware.WizTree.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "WinDirStat.WinDirStat",
+    "Name": "WinDirStat",
+    "Category": "Утилиты",
+    "Description": "Карта файлов и размеров на диске",
+    "Website": "https://windirstat.net",
+    "Url": "https://github.com/windirstat/windirstat/releases/download/release/v2.9.3/WinDirStat-x64.msi",
+    "SHA256": "96C4C4BEB63C7C5AD6B1A206F96560D7A9A2B6063F3CD175A82F392977A9AF5D",
+    "Version": "2.9.3",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/w/WinDirStat/WinDirStat/2.9.3/WinDirStat.WinDirStat.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "REALiX.HWiNFO",
+    "Name": "HWiNFO",
+    "Category": "Утилиты",
+    "Description": "Диагностика датчиков и оборудования",
+    "Website": "https://www.hwinfo.com",
+    "Url": "https://www.hwinfo.com/files/hwi64_854.exe",
+    "SHA256": "16281EC83A69A720BEAC8E2A1DAD606FB2EAF4757BB02C7752B72EE2C26EE243",
+    "Version": "8.54",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/REALiX/HWiNFO/8.54/REALiX.HWiNFO.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "CPUID.CPU-Z",
+    "Name": "CPU-Z",
+    "Category": "Утилиты",
+    "Description": "Информация о процессоре и памяти",
+    "Website": "https://www.cpuid.com",
+    "Url": "https://download.cpuid.com/cpu-z/cpu-z_3.01-en.exe",
+    "SHA256": "74AB9B1C24FB223D0A5C23E2E444B6CBBA7D0C6882CC4BF389E3F88BFCA37490",
+    "Version": "3.01",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/CPUID/CPU-Z/3.01/CPUID.CPU-Z.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "TechPowerUp.GPU-Z",
+    "Name": "GPU-Z",
+    "Category": "Утилиты",
+    "Description": "Информация о видеокарте",
+    "Website": "https://www.techpowerup.com/gpuz",
+    "Url": "https://us1-dl.techpowerup.com/files/GPU-Z.2.71.0.exe",
+    "SHA256": "A2412D6720E091F65925622561C3F274A25ECD0B9FB0F50AB3B910918F01DEE9",
+    "Version": "2.71.0",
+    "InstallerType": "exe",
+    "Args": [
+      "-installSilent"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/TechPowerUp/GPU-Z/2.71.0/TechPowerUp.GPU-Z.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "CrystalDewWorld.CrystalDiskInfo",
+    "Name": "CrystalDiskInfo",
+    "Category": "Утилиты",
+    "Description": "Состояние и SMART накопителей",
+    "Website": "https://crystalmark.info",
+    "Url": "https://sourceforge.net/projects/crystaldiskinfo/files/9.9.3/CrystalDiskInfo9_9_3.exe/download",
+    "SHA256": "AEB4F4AB81C71F9B41CE65DE841162260FF64C1EC07A758A459CAC925BD0FCF6",
+    "Version": "9.9.3",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/CrystalDewWorld/CrystalDiskInfo/9.9.3/CrystalDewWorld.CrystalDiskInfo.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "CrystalDewWorld.CrystalDiskMark",
+    "Name": "CrystalDiskMark",
+    "Category": "Утилиты",
+    "Description": "Тест скорости дисков",
+    "Website": "https://crystalmark.info",
+    "Url": "https://sourceforge.net/projects/crystaldiskmark/files/9.0.3/CrystalDiskMark9_0_3.exe",
+    "SHA256": "1A255154E116A533F86535BC362F101E32D6171604CDE9B6B554335856917E5E",
+    "Version": "9.0.3",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/CrystalDewWorld/CrystalDiskMark/9.0.3/CrystalDewWorld.CrystalDiskMark.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "AntibodySoftware.WizFile",
+    "Name": "WizFile",
+    "Category": "Утилиты",
+    "Description": "Быстрый поиск файлов",
+    "Website": "https://antibody-software.com",
+    "Url": "https://antibody-software.com/files/wizfile_3_15_setup.exe",
+    "SHA256": "D65D392BAE45A2E95A3950FE09C5822E552DB498067300450DC4729C4DCA7917",
+    "Version": "3.15",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/AntibodySoftware/WizFile/3.15/AntibodySoftware.WizFile.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Rufus.Rufus",
+    "Name": "Rufus",
+    "Category": "Утилиты",
+    "Description": "Создание загрузочных USB-носителей",
+    "Website": "https://rufus.ie",
+    "Url": "https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15.exe",
+    "SHA256": "84C8A437F8AF89257524478489E5C85F1EDF25F761D299E2BCDE46AC0AFBE106",
+    "Version": "4.15",
+    "InstallerType": "portable",
+    "Args": [],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/Rufus/Rufus/4.15/Rufus.Rufus.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Balena.Etcher",
+    "Name": "balenaEtcher",
+    "Category": "Утилиты",
+    "Description": "Запись образов на USB и карты",
+    "Website": "https://etcher.balena.io",
+    "Url": "https://github.com/balena-io/etcher/releases/download/v2.1.7/balenaEtcher-2.1.7.Setup.exe",
+    "SHA256": "386BB45DA6E0EDEB20E065427CDEF30A876E4D2A59579F8ADD329D8510AC12F8",
+    "Version": "2.1.7",
+    "InstallerType": "exe",
+    "Args": [
+      "--silent"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Balena/Etcher/2.1.7/Balena.Etcher.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "RamenSoftware.Windhawk",
+    "Name": "Windhawk",
+    "Category": "Утилиты",
+    "Description": "Настройка интерфейса Windows",
+    "Website": "https://windhawk.net",
+    "Url": "https://github.com/ramensoftware/windhawk/releases/download/v1.7.3/windhawk_setup.exe",
+    "SHA256": "5116CC1703384AAC88B8D7A3B57F172AEA5DA32B6DF7355FB2F8247D23813C8F",
+    "Version": "1.7.3",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S",
+      "/STANDARD"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/RamenSoftware/Windhawk/1.7.3/RamenSoftware.Windhawk.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "AutoHotkey.AutoHotkey",
+    "Name": "AutoHotkey",
+    "Category": "Утилиты",
+    "Description": "Горячие клавиши и автоматизация",
+    "Website": "https://www.autohotkey.com",
+    "Url": "https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.30/AutoHotkey_2.0.30_setup.exe",
+    "SHA256": "ECFB26B4CC90CD1E5440ED491CDE486E728541D63F3A4C24159E8DDAE77AB772",
+    "Version": "2.0.30",
+    "InstallerType": "exe",
+    "Args": [
+      "/silent"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/AutoHotkey/AutoHotkey/2.0.30/AutoHotkey.AutoHotkey.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.Sysinternals.ProcessExplorer",
+    "Name": "Process Explorer",
+    "Category": "Утилиты",
+    "Description": "Подробный просмотр процессов",
+    "Website": "https://learn.microsoft.com/sysinternals",
+    "Url": "https://download.sysinternals.com/files/ProcessExplorer.zip",
+    "SHA256": "DAB147316264B89AE46AE2AD7D8A94116848EF0B703BCAC8DE9FF22689CE9D51",
+    "Version": "17.2",
+    "InstallerType": "portable",
+    "Args": [],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Sysinternals/ProcessExplorer/17.2/Microsoft.Sysinternals.ProcessExplorer.installer.yaml",
+    "Extension": "zip",
+    "NestedPath": "procexp.exe",
+    "PortableAlias": "procexp",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.Sysinternals.Autoruns",
+    "Name": "Autoruns",
+    "Category": "Утилиты",
+    "Description": "Анализ автозапуска Windows",
+    "Website": "https://learn.microsoft.com/sysinternals",
+    "Url": "https://download.sysinternals.com/files/Autoruns.zip",
+    "SHA256": "7B3A8EED819F732A3E4C134AECAEAEBB8D643A46490CCDDB82CC8A1A745C4CF7",
+    "Version": "14.3",
+    "InstallerType": "portable",
+    "Args": [],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Sysinternals/Autoruns/14.3/Microsoft.Sysinternals.Autoruns.installer.yaml",
+    "Extension": "zip",
+    "NestedPath": "Autoruns.exe",
+    "PortableAlias": "Autoruns",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Guru3D.Afterburner",
+    "Name": "MSI Afterburner",
+    "Category": "Утилиты",
+    "Description": "Мониторинг и настройка GPU",
+    "Website": "https://www.msi.com/Landing/afterburner",
+    "Url": "https://ftp.nluug.nl/pub/games/PC/guru3d/afterburner/[Guru3D]-MSIAfterburnerSetup466Build16757.zip",
+    "SHA256": "348E9690A638D84E30E32E9C7C2DD7AAD9FD82D71ECED1942C04C4C5620B0E1E",
+    "Version": "4.6.6",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Guru3D/Afterburner/4.6.6/Guru3D.Afterburner.installer.yaml",
+    "Extension": "zip",
+    "NestedPath": "MSIAfterburnerSetup466.exe",
+    "PortableAlias": "",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "qBittorrent.qBittorrent",
+    "Name": "qBittorrent",
+    "Category": "Сеть и облако",
+    "Description": "Клиент загрузок BitTorrent",
+    "Website": "https://www.qbittorrent.org",
+    "Url": "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-5.3.0/qbittorrent_5.3.0_x64_setup.exe/download",
+    "SHA256": "AFF5B3BDC00D6E5773D6099BA30F9696DD3DFD1669AB0F64CE5C4E7168486436",
+    "Version": "5.3.0",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/q/qBittorrent/qBittorrent/5.3.0/qBittorrent.qBittorrent.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Transmission.Transmission",
+    "Name": "Transmission",
+    "Category": "Сеть и облако",
+    "Description": "Лёгкий клиент BitTorrent",
+    "Website": "https://transmissionbt.com",
+    "Url": "https://github.com/transmission/transmission/releases/download/4.1.3/transmission-4.1.3-x64.msi",
+    "SHA256": "C8EA492D8F46FADAC26E0C05B244CABBA556201D5FE348DFCF1CF036621741F8",
+    "Version": "4.1.3",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/Transmission/Transmission/4.1.3/Transmission.Transmission.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Google.GoogleDrive",
+    "Name": "Google Drive",
+    "Category": "Сеть и облако",
+    "Description": "Синхронизация облачных файлов",
+    "Website": "https://www.google.com/drive",
+    "Url": "https://dl.google.com/release2/drive-file-stream/glebcd62hy755nfh23p5kqwm4i_132.0.0.0/setup.exe",
+    "SHA256": "6AB7AF8224736D4B6F0B06345F5BDC78A664C0A995973C0B1B38C3A0AD5CD853",
+    "Version": "132.0.0.0",
+    "InstallerType": "exe",
+    "Args": [
+      "--silent",
+      "--skip_launch_new",
+      "--gsuite_shortcuts=false"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Google/GoogleDrive/132.0.0.0/Google.GoogleDrive.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": [
+      1638
+    ]
+  },
+  {
+    "Id": "Dropbox.Dropbox",
+    "Name": "Dropbox",
+    "Category": "Сеть и облако",
+    "Description": "Облачное хранилище файлов",
+    "Website": "https://www.dropbox.com",
+    "Url": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20262.4.3183%20Enterprise%20Installer.x64.msi",
+    "SHA256": "2C60DE2AACB6BCC232B50F47A5F1C899227988CF49DDAFB57553848C1E317483",
+    "Version": "262.4.3183",
+    "InstallerType": "msi",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/Dropbox/Dropbox/262.4.3183/Dropbox.Dropbox.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Microsoft.OneDrive",
+    "Name": "OneDrive",
+    "Category": "Сеть и облако",
+    "Description": "Синхронизация файлов Microsoft",
+    "Website": "https://www.microsoft.com/onedrive",
+    "Url": "https://oneclient.sfx.ms/Win/Installers/26.183.0920.0005/amd64/OneDriveSetup.exe",
+    "SHA256": "2BA7C8C6735294AD2398C37147924288B91CD7B22AC980664D990A08F347D3C3",
+    "Version": "26.183.0920.0005",
+    "InstallerType": "exe",
+    "Args": [
+      "/silent"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/OneDrive/26.183.0920.0005/Microsoft.OneDrive.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Nextcloud.NextcloudDesktop",
+    "Name": "Nextcloud",
+    "Category": "Сеть и облако",
+    "Description": "Клиент личного облака",
+    "Website": "https://nextcloud.com",
+    "Url": "https://github.com/nextcloud-releases/desktop/releases/download/v35.0.0/Nextcloud-35.0.0-x64.msi",
+    "SHA256": "7DF0F2FE42519E454E14D45A34C4D8D601E98434710087CB1D6D96F315206CD7",
+    "Version": "35.0.0",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart",
+      "Reboot=ReallySuppress"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/n/Nextcloud/NextcloudDesktop/35.0.0/Nextcloud.NextcloudDesktop.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": [
+      3010
+    ]
+  },
+  {
+    "Id": "Syncthing.Syncthing",
+    "Name": "Syncthing",
+    "Category": "Сеть и облако",
+    "Description": "Прямая синхронизация между ПК",
+    "Website": "https://syncthing.net",
+    "Url": "https://github.com/syncthing/syncthing/releases/download/v2.1.6/syncthing-windows-amd64-v2.1.6.zip",
+    "SHA256": "589098269CABB9A5A1703A934305B4153609D7623E978E1C94F0F49D77AE5E9F",
+    "Version": "2.1.6",
+    "InstallerType": "portable",
+    "Args": [],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/Syncthing/Syncthing/2.1.6/Syncthing.Syncthing.installer.yaml",
+    "Extension": "zip",
+    "NestedPath": "syncthing-windows-amd64-v2.1.6/syncthing.exe",
+    "PortableAlias": "",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Tailscale.Tailscale",
+    "Name": "Tailscale",
+    "Category": "Сеть и облако",
+    "Description": "Частная сеть между устройствами",
+    "Website": "https://tailscale.com",
+    "Url": "https://pkgs.tailscale.com/stable/tailscale-setup-1.104.1-amd64.msi",
+    "SHA256": "6DA8BCDB0D45A214CAE0E8A88C2987AD48DEC134BF04DFFB9C05F1354C02B0B4",
+    "Version": "1.104.1",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/Tailscale/Tailscale/1.104.1/Tailscale.Tailscale.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "WireGuard.WireGuard",
+    "Name": "WireGuard",
+    "Category": "Сеть и облако",
+    "Description": "Клиент VPN WireGuard",
+    "Website": "https://www.wireguard.com",
+    "Url": "https://download.wireguard.com/windows-client/wireguard-amd64-1.1.1.msi",
+    "SHA256": "7BFED60AD61B785C914B38B61555A975488E1D3EC472DBFB2FCDF498FCA75242",
+    "Version": "1.1.1",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart",
+      "DO_NOT_LAUNCH=1"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/w/WireGuard/WireGuard/1.1.1/WireGuard.WireGuard.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Proton.ProtonVPN",
+    "Name": "Proton VPN",
+    "Category": "Сеть и облако",
+    "Description": "Приложение VPN",
+    "Website": "https://protonvpn.com",
+    "Url": "https://vpn.protondownload.com/download/ProtonVPN_v5.1.8_x64.exe",
+    "SHA256": "C7E9D52FD4D3B65FF8EA83C24DBBE3F4AD9B3726739CF645CE15B9E24EDC4AA4",
+    "Version": "5.1.8",
+    "InstallerType": "inno",
+    "Args": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Proton/ProtonVPN/5.1.8/Proton.ProtonVPN.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "WiresharkFoundation.Wireshark",
+    "Name": "Wireshark",
+    "Category": "Сеть и облако",
+    "Description": "Анализ сетевых пакетов",
+    "Website": "https://www.wireshark.org",
+    "Url": "https://2.na.dl.wireshark.org/win64/all-versions/Wireshark-4.6.9-x64.msi",
+    "SHA256": "1975DFC96581A9B674FDA3F41AC1585963B4BA52EA9459F3B6D9CEDFAC3A7217",
+    "Version": "4.6.9",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/w/WiresharkFoundation/Wireshark/4.6.9/WiresharkFoundation.Wireshark.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Bitwarden.Bitwarden",
+    "Name": "Bitwarden",
+    "Category": "Безопасность",
+    "Description": "Менеджер паролей",
+    "Website": "https://bitwarden.com",
+    "Url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-Installer-2026.10.0.exe",
+    "SHA256": "FE97E2AF272B8B44E48F62AA89F9A32DEE9EB5EA63CDB72E70C7D96240E3BCA9",
+    "Version": "2026.10.0",
+    "InstallerType": "nullsoft",
+    "Args": [
+      "/S",
+      "/currentuser"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Bitwarden/Bitwarden/2026.10.0/Bitwarden.Bitwarden.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "KeePassXCTeam.KeePassXC",
+    "Name": "KeePassXC",
+    "Category": "Безопасность",
+    "Description": "Локальная база паролей",
+    "Website": "https://keepassxc.org",
+    "Url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.7.12/KeePassXC-2.7.12-Win64.msi",
+    "SHA256": "FEEE096C1D5D0D7BB7B36B18174818F7BAC889BE7668C550FF0E5EF9206EA9A5",
+    "Version": "2.7.12",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/k/KeePassXCTeam/KeePassXC/2.7.12/KeePassXCTeam.KeePassXC.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "DominikReichl.KeePass",
+    "Name": "KeePass",
+    "Category": "Безопасность",
+    "Description": "Менеджер паролей с плагинами",
+    "Website": "https://keepass.info",
+    "Url": "https://sourceforge.net/projects/keepass/files/KeePass%202.x/2.61.1/KeePass-2.61.1.msi/download",
+    "SHA256": "5A1D0D573D2CB6278394F75FDBFF4D05DCE44EAC6F522C7B43F5E637F77B46C0",
+    "Version": "2.61.1",
+    "InstallerType": "msi",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/DominikReichl/KeePass/2.61.1/DominikReichl.KeePass.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Cryptomator.Cryptomator",
+    "Name": "Cryptomator",
+    "Category": "Безопасность",
+    "Description": "Шифрование файлов для облака",
+    "Website": "https://cryptomator.org",
+    "Url": "https://github.com/cryptomator/cryptomator/releases/download/1.19.3/Cryptomator-1.19.3-x64.msi",
+    "SHA256": "E303CCED835E1A8A1041580EEAEA3B7B3658C348D77EA53A108A95926625C41A",
+    "Version": "1.19.3",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/Cryptomator/Cryptomator/1.19.3/Cryptomator.Cryptomator.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "IDRIX.VeraCrypt",
+    "Name": "VeraCrypt",
+    "Category": "Безопасность",
+    "Description": "Шифрование дисков и контейнеров",
+    "Website": "https://www.veracrypt.fr",
+    "Url": "https://launchpad.net/veracrypt/trunk/1.26.29/+download/VeraCrypt_Setup_x64_1.26.29.msi",
+    "SHA256": "5BA6426983123CFB92BC1F09BD888FDBC0F53F300D0D9C5DA52CE3AEE8D474F0",
+    "Version": "1.26.29",
+    "InstallerType": "wix",
+    "Args": [
+      "/qn",
+      "ACCEPTLICENSE=YES",
+      "/norestart"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/i/IDRIX/VeraCrypt/1.26.29/IDRIX.VeraCrypt.installer.yaml",
+    "Extension": "msi",
+    "SuccessCodes": []
+  },
+  {
+    "Id": "Malwarebytes.Malwarebytes",
+    "Name": "Malwarebytes",
+    "Category": "Безопасность",
+    "Description": "Проверка на нежелательное ПО",
+    "Website": "https://www.malwarebytes.com",
+    "Url": "https://data-cdn.mbamupdates.com/web/mb5-setup-consumer/offline/mb5-setup-consumer-5.7.2.358-166.0.5763-1.0.115215.exe",
+    "SHA256": "AEE718183B29D045CF26E3BF3B9CFF9F3C31AD4D379ECACBA9CFAFF4D26756E7",
+    "Version": "5.7.2.358",
+    "InstallerType": "exe",
+    "Args": [
+      "/VERYSILENT",
+      "/NORESTART"
+    ],
+    "Manifest": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Malwarebytes/Malwarebytes/5.7.2.358/Malwarebytes.Malwarebytes.installer.yaml",
+    "Extension": "exe",
+    "SuccessCodes": []
+  }
+]
