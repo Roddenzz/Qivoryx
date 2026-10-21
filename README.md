@@ -13,7 +13,7 @@
 ![Version](https://img.shields.io/badge/Version-0.3.0-181818)
 ![Build](https://github.com/Roddenzz/Qivoryx/actions/workflows/ci.yml/badge.svg)
 
-[**Скачать приложение**](https://github.com/Roddenzz/Qivoryx/releases/latest) · [Возможности](#возможности) · [Установка](#установка) · [Сборка](#сборка-из-исходников) · [Видео](#видеообзор)
+[**Скачать приложение**](https://github.com/Roddenzz/Qivoryx/releases/latest) · [Возможности](#возможности) · [Установка](#установка) · [Сборка](#сборка-из-исходников)
 
 <img src="docs/images/optimization-dark.png" alt="Qivoryx: центр оптимизации в тёмной теме" width="1200">
 
@@ -30,7 +30,6 @@ Qivoryx — нативное приложение для настольных П
 | [**Qivoryx-0.3.0-Portable-x64.zip**](https://github.com/Roddenzz/Qivoryx/releases/download/v0.3.0/Qivoryx-0.3.0-Portable-x64.zip) | Распаковать полностью и запустить `Qivoryx.exe`. Можно перенести вместе с данными. |
 | [**Qivoryx-0.3.0-Setup-x64.exe**](https://github.com/Roddenzz/Qivoryx/releases/download/v0.3.0/Qivoryx-0.3.0-Setup-x64.exe) | Установить приложение для текущего пользователя с ярлыками и деинсталлятором. |
 | [SHA256.json](https://github.com/Roddenzz/Qivoryx/releases/download/v0.3.0/SHA256.json) | Проверить целостность установщика и portable-архива. |
-| [Видеообзор, русский, Full HD](https://github.com/Roddenzz/Qivoryx/releases/download/v0.3.0/Qivoryx-Presentation-RU-Arseniy-1080p.mp4) | Познакомиться с интерфейсом и основными инструментами за 3 минуты 6 секунд. |
 
 **Для обычного использования достаточно ZIP или EXE.** Автоматические архивы GitHub «Source code» содержат исходники и не заменяют готовые сборки.
 
@@ -195,7 +194,3 @@ build.ps1                Упаковка portable и установщика
 ```
 
 Имя каталога исходников `Tweaker` сохранено для совместимости путей; имя приложения и сборки — **Qivoryx**.
-
-## Видеообзор
-
-[![Видеообзор Qivoryx — нажмите для просмотра](docs/images/video-poster.png)](https://github.com/Roddenzz/Qivoryx/releases/download/v0.3.0/Qivoryx-Presentation-RU-Arseniy-1080p.mp4)
